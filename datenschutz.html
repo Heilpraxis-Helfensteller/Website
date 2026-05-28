@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutz · Heilpraxis Theresa Helfensteller</title>
+  <meta name="description" content="Datenschutzerklärung der Heilpraxis Theresa Helfensteller in Fellbach am Kappelberg.">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="48x48" href="./assets/favicon/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <style>
+    @font-face { font-family: 'Crimson Pro'; font-style: italic; font-weight: 300; font-display: swap; src: url('./assets/fonts/q5uSsoa5M_tv7IihmnkabAReu49Y_Bo-HVKMBi7Ke5s7.ttf') format('truetype'); }
+    @font-face { font-family: 'Crimson Pro'; font-style: italic; font-weight: 400; font-display: swap; src: url('./assets/fonts/q5uSsoa5M_tv7IihmnkabAReu49Y_Bo-HVKMBi6Ue5s7.ttf') format('truetype'); }
+    @font-face { font-family: 'Crimson Pro'; font-style: italic; font-weight: 500; font-display: swap; src: url('./assets/fonts/q5uSsoa5M_tv7IihmnkabAReu49Y_Bo-HVKMBi6me5s7.ttf') format('truetype'); }
+    @font-face { font-family: 'Crimson Pro'; font-style: normal; font-weight: 300; font-display: swap; src: url('./assets/fonts/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZkG18OA.ttf') format('truetype'); }
+    @font-face { font-family: 'Crimson Pro'; font-style: normal; font-weight: 400; font-display: swap; src: url('./assets/fonts/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm18OA.ttf') format('truetype'); }
+    @font-face { font-family: 'Crimson Pro'; font-style: normal; font-weight: 500; font-display: swap; src: url('./assets/fonts/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZ_G18OA.ttf') format('truetype'); }
+    @font-face { font-family: 'Crimson Pro'; font-style: normal; font-weight: 600; font-display: swap; src: url('./assets/fonts/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZEGp8OA.ttf') format('truetype'); }
+    @font-face { font-family: 'Jost'; font-style: normal; font-weight: 300; font-display: swap; src: url('./assets/fonts/92zPtBhPNqw79Ij1E865zBUv7mz9JQVG.ttf') format('truetype'); }
+    @font-face { font-family: 'Jost'; font-style: normal; font-weight: 400; font-display: swap; src: url('./assets/fonts/92zPtBhPNqw79Ij1E865zBUv7myjJQVG.ttf') format('truetype'); }
+    @font-face { font-family: 'Jost'; font-style: normal; font-weight: 500; font-display: swap; src: url('./assets/fonts/92zPtBhPNqw79Ij1E865zBUv7myRJQVG.ttf') format('truetype'); }
+
+    :root {
+      --cream: #f7f3ed;
+      --warm-white: #fdfaf6;
+      --blue: #6880a0;
+      --blue-dark: #536881;
+      --blue-line: rgba(104, 128, 160, 0.15);
+      --blue-soft: rgba(104, 128, 160, 0.09);
+      --gold: #c9a75e;
+      --gold-soft: rgba(201, 167, 94, 0.14);
+      --text: #2c2118;
+      --text-mid: #584d44;
+      --text-soft: #8a7e76;
+      --shadow: 0 24px 60px rgba(44, 33, 24, 0.08);
+      --max: 1100px;
+      --r: 18px;
+      --r-lg: 30px;
+    }
+
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      font-family: "Crimson Pro", Georgia, serif;
+      background:
+        radial-gradient(circle at top right, rgba(104, 128, 160, 0.10), transparent 26%),
+        linear-gradient(180deg, #fbf7f1 0%, var(--cream) 28%, #f3ede4 100%);
+      color: var(--text);
+      line-height: 1.78;
+      overflow-x: clip;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    p, li { font-size: 17px; color: var(--text-mid); }
+    ul { padding-left: 20px; }
+    code {
+      font-family: "Jost", sans-serif;
+      font-size: 13px;
+      background: rgba(104, 128, 160, 0.09);
+      border: 1px solid var(--blue-line);
+      border-radius: 12px;
+      padding: 3px 9px;
+      color: var(--blue-dark);
+      display: inline-block;
+      max-width: 100%;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      line-height: 1.4;
+    }
+    .wrap { width: min(calc(100% - 48px), var(--max)); margin: 0 auto; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(247, 243, 237, 0.9);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--blue-line);
+    }
+    .topbar-inner {
+      min-height: 96px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    .brand-lockup {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+    .brand-logo {
+      width: 106px;
+      height: 106px;
+      object-fit: cover;
+      border-radius: 0;
+      background: transparent;
+      border: 0;
+      padding: 0;
+      box-shadow: none;
+      flex-shrink: 0;
+    }
+    .brand-copy { min-width: 0; }
+    .brand-name {
+      font-family: "Jost", sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--blue-dark);
+      display: block;
+      margin-bottom: 4px;
+    }
+    .brand-copy p {
+      font-size: 14px;
+      color: var(--text-soft);
+      margin: 0;
+      line-height: 1.4;
+      overflow-wrap: anywhere;
+    }
+    .back-link {
+      font-family: "Jost", sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      padding: 11px 18px;
+      border: 1px solid var(--blue-line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.56);
+      white-space: nowrap;
+    }
+
+    main { padding: 56px 0 88px; }
+    .hero-legal {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      gap: 26px;
+      align-items: stretch;
+      margin-bottom: 26px;
+    }
+    .hero-card,
+    .summary-card,
+    .section-card {
+      background: rgba(253, 250, 246, 0.92);
+      border: 1px solid var(--blue-line);
+      border-radius: var(--r-lg);
+      box-shadow: var(--shadow);
+    }
+    .hero-card {
+      padding: 42px;
+      background:
+        linear-gradient(135deg, rgba(104, 128, 160, 0.08), rgba(201, 167, 94, 0.08)),
+        rgba(253, 250, 246, 0.94);
+    }
+    .summary-card {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      justify-content: center;
+    }
+    .eyebrow {
+      font-family: "Jost", sans-serif;
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      color: var(--blue);
+      display: block;
+      margin-bottom: 14px;
+    }
+    h1, h2 {
+      font-weight: 400;
+      line-height: 1.06;
+      letter-spacing: -0.01em;
+    }
+    h1 {
+      font-size: clamp(42px, 5vw, 66px);
+      margin-bottom: 18px;
+      max-width: 10ch;
+      overflow-wrap: anywhere;
+      hyphens: auto;
+    }
+    h2 {
+      font-size: clamp(24px, 3vw, 34px);
+      margin-bottom: 14px;
+    }
+    .hero-card > p {
+      font-size: 18px;
+      max-width: 46ch;
+    }
+    .summary-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .summary-list li {
+      padding: 13px 16px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--blue-soft), var(--gold-soft));
+      border: 1px solid var(--blue-line);
+      color: var(--text-mid);
+    }
+    .content-flow {
+      display: grid;
+      gap: 20px;
+    }
+    .section-card {
+      padding: 28px 30px;
+      position: relative;
+      overflow: hidden;
+    }
+    .section-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--blue-line), transparent);
+    }
+    .section-card a {
+      color: var(--blue-dark);
+      border-bottom: 1px solid var(--blue-line);
+      overflow-wrap: anywhere;
+    }
+    .meta {
+      margin-top: 24px;
+      padding: 18px 22px;
+      border-radius: var(--r);
+      background: linear-gradient(135deg, var(--blue-soft), var(--gold-soft));
+      border: 1px solid var(--blue-line);
+      font-family: "Jost", sans-serif;
+      font-size: 12px;
+      color: var(--text-soft);
+    }
+
+    @media (max-width: 900px) {
+      .hero-legal { grid-template-columns: 1fr; }
+      .hero-card,
+      .summary-card,
+      .section-card {
+        padding: 28px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .wrap { width: min(calc(100% - 28px), var(--max)); }
+      .topbar-inner {
+        min-height: 84px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .brand-lockup {
+        width: 100%;
+        gap: 10px;
+      }
+      .brand-logo {
+        width: 79px;
+        height: 79px;
+      }
+      .brand-name {
+        font-size: 10px;
+        letter-spacing: 0.12em;
+      }
+      .brand-copy p {
+        font-size: 13px;
+      }
+      .back-link {
+        width: 100%;
+        text-align: center;
+        white-space: normal;
+        padding: 10px 14px;
+      }
+      main { padding: 28px 0 56px; }
+      .hero-legal {
+        gap: 14px;
+        margin-bottom: 16px;
+      }
+      .content-flow {
+        gap: 14px;
+      }
+      .hero-card,
+      .summary-card,
+      .section-card {
+        padding: 18px;
+      }
+      h1 {
+        max-width: none;
+        font-size: clamp(28px, 8.8vw, 34px);
+        line-height: 1.12;
+        word-break: normal;
+        overflow-wrap: break-word;
+      }
+      .summary-card { gap: 12px; }
+      .summary-list { gap: 10px; }
+      .summary-list li { padding: 11px 13px; }
+      .meta { padding: 16px 18px; }
+      h1 { font-size: 38px; }
+      p, li { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand-lockup">
+        <img class="brand-logo" src="./assets/new_branding/legal_logo_transparent.png" alt="Logo Heilpraxis Theresa Helfensteller" width="420" height="420" decoding="async">
+        <div class="brand-copy">
+          <span class="brand-name">Heilpraxis Theresa Helfensteller</span>
+          <p>Fellbach am Kappelberg</p>
+        </div>
+      </div>
+      <a class="back-link" href="./index.html">Zurück zur Startseite</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero-legal">
+        <div class="hero-card">
+          <span class="eyebrow">Datenschutz</span>
+          <h1>Datenschutzerklärung</h1>
+          <p>Diese Datenschutzerklärung informiert darüber, welche personenbezogenen Daten auf dieser Website verarbeitet werden, zu welchem Zweck dies geschieht und welche Rechte Ihnen dabei zustehen.</p>
+        </div>
+      </section>
+
+      <section class="content-flow" aria-label="Datenschutzinhalte">
+        <article class="section-card">
+          <span class="eyebrow">1</span>
+          <h2>Verantwortliche Stelle</h2>
+          <p>Theresa Maria Helfensteller<br>Vordere Straße 37<br>70734 Fellbach<br>E-Mail: <a href="mailto:kontakt@heilpraxis-theresa-helfensteller.de">kontakt@heilpraxis-theresa-helfensteller.de</a></p>
+        </article>
+
+        <article class="section-card">
+          <span class="eyebrow">2</span>
+          <h2>Bereitstellung der Website und Hosting</h2>
+          <p>Diese Website wird über GitHub beziehungsweise GitHub Pages bereitgestellt. Anbieter ist GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA. Beim Aufruf der Website können technisch erforderliche Server-Logdaten verarbeitet werden, insbesondere IP-Adresse, Datum und Uhrzeit des Abrufs, Browsertyp, Betriebssystem, Referrer-URL und aufgerufene Dateien.</p>
+          <p>Die Verarbeitung erfolgt zur sicheren, stabilen und technisch funktionsfähigen Bereitstellung der Website auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in der zuverlässigen Darstellung und dem sicheren Betrieb der Website. Eine Datenübermittlung in Drittländer kann nicht ausgeschlossen werden. GitHub verwendet nach eigenen Angaben geeignete Garantien für internationale Datenübermittlungen.</p>
+        </article>
+
+        <article class="section-card">
+          <span class="eyebrow">3</span>
+          <h2>Kontaktformular</h2>
+          <p>Wenn Sie das Kontaktformular nutzen, werden Ihre eingegebenen Daten an den Dienst Formspree übermittelt und von dort an die Praxis weitergeleitet. Anbieter ist Formspree, Inc., USA. Verarbeitet werden insbesondere Name, E-Mail-Adresse, Erreichbarkeit, Betreff und Nachricht sowie technisch notwendige Metadaten.</p>
+          <p>Die Verarbeitung erfolgt zur Bearbeitung Ihrer Anfrage und gegebenenfalls zur Vertragsanbahnung auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. Soweit dabei zusätzliche technische Schutz- und Missbrauchsprüfungen erfolgen, geschieht dies auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in einer sicheren und funktionsfähigen Bearbeitung von Website-Anfragen. Eine Übermittlung in die USA ist möglich. Formspree verweist auf geeignete Schutzmechanismen für internationale Datenübermittlungen. Weitere Informationen stellt Formspree unter <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">formspree.io/legal/privacy-policy</a> bereit.</p>
+        </article>
+
+        <article class="section-card">
+          <span class="eyebrow">4</span>
+          <h2>Kontaktaufnahme per E-Mail</h2>
+          <p>Wenn Sie direkt per E-Mail Kontakt aufnehmen, werden Ihre Angaben zur Bearbeitung Ihrer Anfrage verarbeitet. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO beziehungsweise Art. 6 Abs. 1 lit. f DSGVO.</p>
+        </article>
+
+        <article class="section-card">
+          <span class="eyebrow">5</span>
+          <h2>Gesundheitsdaten</h2>
+          <p>Bitte senden Sie über das Kontaktformular oder per E-Mail möglichst keine sensiblen Gesundheitsdaten, Befunde oder Diagnosen. Sollten Sie solche Informationen dennoch freiwillig übermitteln, handelt es sich um besondere Kategorien personenbezogener Daten im Sinne von Art. 9 DSGVO. Diese Angaben werden ausschließlich verarbeitet, soweit dies zur Bearbeitung Ihrer Anfrage oder zur Anbahnung eines Behandlungsverhältnisses erforderlich ist.</p>
+        </article>
+
+        <article class="section-card">
+          <span class="eyebrow">6</span>
+          <h2>Empfänger und Speicherdauer</h2>
+          <p>Empfänger der Daten können technische Dienstleister sein, die für Hosting und Formularübermittlung eingesetzt werden. Personenbezogene Daten werden nur so lange gespeichert, wie dies für die Bearbeitung Ihrer Anfrage, für eine mögliche weitere Kommunikation oder zur Erfüllung gesetzlicher Aufbewahrungspflichten erforderlich ist.</p>
+          <p>Für über Formspree übermittelte Formulareingaben gilt ergänzend: Nach Anbieterangaben umfasst die Einreichungshistorie im Free-Plan von Formspree 30 Tage; abweichende Speicherfristen können sich je nach verwendetem Tarif oder technischer Konfiguration ergeben.</p>
+        </article>
+
+        <article class="section-card">
+          <span class="eyebrow">7</span>
+          <h2>Ihre Rechte</h2>
+          <ul>
+            <li>Auskunft über gespeicherte Daten gemäß Art. 15 DSGVO</li>
+            <li>Berichtigung unrichtiger Daten gemäß Art. 16 DSGVO</li>
+            <li>Löschung gemäß Art. 17 DSGVO</li>
+            <li>Einschränkung der Verarbeitung gemäß Art. 18 DSGVO</li>
+            <li>Widerspruch gegen die Verarbeitung gemäß Art. 21 DSGVO</li>
+            <li>Datenübertragbarkeit gemäß Art. 20 DSGVO</li>
+            <li>Widerruf einer erteilten Einwilligung jederzeit mit Wirkung für die Zukunft gemäß Art. 7 Abs. 3 DSGVO</li>
+            <li>Beschwerde bei einer Datenschutz-Aufsichtsbehörde, insbesondere beim Landesbeauftragten für den Datenschutz und die Informationsfreiheit Baden-Württemberg, Postfach 10 29 32, 70025 Stuttgart</li>
+          </ul>
+        </article>
+
+        <article class="section-card">
+          <span class="eyebrow">8</span>
+          <h2>Externe Dienste, Schriften und Reichweitenmessung</h2>
+          <p>Die auf dieser Website verwendeten Schriften werden lokal bereitgestellt. Zur datensparsamen statistischen Auswertung der Nutzung dieser Website ist GoatCounter eingebunden. Anbieter ist GoatCounter, gehostet unter der Instanz <code>heilpraxishelfensteller.goatcounter.com</code>. Dabei werden nach Anbieterangaben insbesondere aufgerufene Seiten, Zeitpunkt des Abrufs, Referrer, gekürzte beziehungsweise anonymisierte technische Zugriffsdaten sowie Browser- und Geräteinformationen verarbeitet. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in der datensparsamen Analyse der Nutzung der Website und der Verbesserung des Online-Angebots.</p>
+          <p>Nach aktuellem technischem Stand setzt GoatCounter keine Cookies und speichert keine vollständigen IP-Adressen dauerhaft. Die Auswertung erfolgt in einer datenschutzfreundlichen Konfiguration mit auf den notwendigen Umfang reduzierten Statistikdaten. Weitere Informationen stellt der Anbieter unter <a href="https://www.goatcounter.com/help" target="_blank" rel="noopener noreferrer">goatcounter.com/help</a> bereit.</p>
+        </article>
+
+        <article class="section-card">
+          <span class="eyebrow">9</span>
+          <h2>Cookies und Einwilligungsbanner</h2>
+          <p>In der aktuellen Version werden keine nicht technisch erforderlichen Cookies oder vergleichbaren Tracking-Technologien zu Marketingzwecken eingesetzt. Nach derzeitigem Stand ist deshalb kein gesondertes Cookie-Einwilligungsbanner vorgesehen. Sollte die technische Einbindung künftig geändert oder um einwilligungspflichtige Dienste erweitert werden, wird diese Datenschutzerklärung entsprechend angepasst.</p>
+        </article>
+      </section>
+
+      <div class="meta">Stand: Mai 2026 · Diese Fassung bildet den aktuellen Stand mit GitHub-Hosting, Formspree-Kontaktformular und GoatCounter-Reichweitenmessung ab.</div>
+    </div>
+  </main>
+</body>
+</html>

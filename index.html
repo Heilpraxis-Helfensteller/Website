@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heilpraxis Theresa Helfensteller</title>
+  <meta name="description" content="Heilpraxis Theresa Helfensteller in Fellbach am Kappelberg – ausführliche Anamnese, persönliche Begleitung und ein ganzheitlicher Blick auf anhaltende Beschwerden, Erschöpfung sowie Belastungen im Zusammenhang mit Stress.">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="48x48" href="./assets/favicon/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="preload" as="image" href="./assets/new_branding/header_banderole_latest_optimized.png" fetchpriority="high">
+  <script data-goatcounter="https://heilpraxishelfensteller.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <style>
+    @font-face {
+      font-family: 'Crimson Pro';
+      font-style: italic;
+      font-weight: 300;
+      font-display: swap;
+      src: url('./assets/fonts/q5uSsoa5M_tv7IihmnkabAReu49Y_Bo-HVKMBi7Ke5s7.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Crimson Pro';
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: url('./assets/fonts/q5uSsoa5M_tv7IihmnkabAReu49Y_Bo-HVKMBi6Ue5s7.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Crimson Pro';
+      font-style: italic;
+      font-weight: 500;
+      font-display: swap;
+      src: url('./assets/fonts/q5uSsoa5M_tv7IihmnkabAReu49Y_Bo-HVKMBi6me5s7.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Crimson Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url('./assets/fonts/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZkG18OA.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Crimson Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('./assets/fonts/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm18OA.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Crimson Pro';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url('./assets/fonts/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZ_G18OA.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Crimson Pro';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url('./assets/fonts/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZEGp8OA.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url('./assets/fonts/92zPtBhPNqw79Ij1E865zBUv7mz9JQVG.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('./assets/fonts/92zPtBhPNqw79Ij1E865zBUv7myjJQVG.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url('./assets/fonts/92zPtBhPNqw79Ij1E865zBUv7myRJQVG.ttf') format('truetype');
+    }
+    :root {
+      --cream:      #f7f3ed;
+      --warm-white: #fdfaf6;
+      --blue:       #6880a0;
+      --blue-dark:  #536881;
+      --blue-soft:  rgba(104,128,160,0.09);
+      --blue-line:  rgba(104,128,160,0.15);
+      --text:       #2c2118;
+      --text-mid:   #584d44;
+      --text-soft:  #8a7e76;
+      --gold:       #c9a75e;
+      --gold-light: #e8d5a3;
+      --gold-soft:  rgba(201,167,94,0.12);
+      --max:        1140px;
+      --r:          18px;
+      --r-lg:       28px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Crimson Pro", Georgia, serif;
+      background: var(--cream); color: var(--text); line-height: 1.78;
+      overflow-x: clip;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(calc(100% - 48px), var(--max)); margin: 0 auto; }
+
+    /* TOPBAR */
+    .topbar {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(247,243,237,0.93); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--blue-line);
+    }
+    .topbar-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 24px; min-height: 138px; padding: 5px 0;
+    }
+    .brand-logo {
+      height: 124px;
+      width: auto;
+      max-width: min(100%, 430px);
+      object-fit: contain;
+      object-position: left center;
+      flex-shrink: 1;
+    }
+    nav {
+      display: flex; align-items: center; gap: 26px;
+      font-family: "Jost", sans-serif; font-size: 12.5px;
+      font-weight: 400; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-mid);
+    }
+    nav a:hover { color: var(--blue-dark); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 7px; padding: 10px 22px; border-radius: 999px;
+      font-family: "Jost", sans-serif; font-size: 12.5px; font-weight: 500;
+      letter-spacing: 0.05em; border: 1px solid transparent;
+      cursor: pointer; transition: all 0.18s ease;
+    }
+    .btn-primary { background: var(--blue); color: #fff; }
+    .btn-primary:hover { background: var(--blue-dark); transform: translateY(-1px); }
+    .btn-outline { background: transparent; color: var(--blue); border-color: var(--blue-line); }
+    .btn-outline:hover { background: var(--blue-soft); }
+    .menu-toggle {
+      display: none; border: 1px solid var(--blue-line); background: transparent;
+      color: var(--text); border-radius: 999px; padding: 8px 16px; cursor: pointer;
+      font-family: "Jost", sans-serif; font-size: 12.5px;
+    }
+
+    /* TYPE */
+    .eyebrow {
+      font-family: "Jost", sans-serif; font-size: 10.5px; font-weight: 500;
+      letter-spacing: 0.20em; text-transform: uppercase; color: var(--blue);
+      display: block; margin-bottom: 12px;
+    }
+    h1, h2, h3, h4 {
+      font-family: "Crimson Pro", Georgia, serif; font-weight: 400;
+      line-height: 1.06; letter-spacing: -0.01em;
+    }
+    h1 { font-size: clamp(42px, 5.5vw, 72px); }
+    h2 { font-size: clamp(34px, 4.4vw, 56px); }
+    h3 { font-size: clamp(24px, 2.8vw, 36px); }
+    h4 { font-size: 21px; }
+    p { font-size: 18px; line-height: 1.80; color: var(--text-mid); margin-bottom: 16px; }
+    p:last-child { margin-bottom: 0; }
+
+    .section {
+      padding: 96px 0;
+      position: relative;
+      scroll-margin-top: 110px;
+    }
+    .section + .section::before {
+      content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+      width: min(calc(100% - 48px), var(--max)); height: 1px;
+      background: linear-gradient(90deg, transparent, var(--blue-line) 40%, var(--blue-line) 60%, transparent);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 76vh; position: relative; overflow: hidden;
+      display: flex; align-items: center;
+    }
+    .hero-media {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .hero-media img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 73% center;
+    }
+    .hero::before {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(
+        100deg,
+        rgba(247,243,237,1.0) 0%,
+        rgba(247,243,237,0.95) 28%,
+        rgba(247,243,237,0.78) 48%,
+        rgba(247,243,237,0.15) 70%,
+        rgba(247,243,237,0.0) 88%
+      );
+      z-index: 1;
+    }
+    .hero::after {
+      content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 130px;
+      background: linear-gradient(to bottom, transparent, var(--cream));
+      z-index: 2;
+    }
+    .hero-inner-single {
+      position: relative; z-index: 3;
+      width: min(calc(100% - 48px), var(--max)); margin: 0 auto;
+      padding: 50px 0 50px;
+    }
+    .hero-text-single { max-width: 620px; }
+    .hero-location {
+      display: inline-flex; align-items: center; gap: 8px; margin-bottom: 22px;
+      padding: 6px 16px; border-radius: 999px;
+      background: rgba(255,255,255,0.68); border: 1px solid var(--blue-line);
+      font-family: "Jost", sans-serif; font-size: 12px; letter-spacing: 0.07em; color: var(--text-mid);
+    }
+    .hero-location::before {
+      content: ""; width: 7px; height: 7px; border-radius: 50%;
+      background: var(--gold); flex-shrink: 0;
+    }
+    .hero-text-single h1 { margin-bottom: 20px; color: var(--text); max-width: 16ch; }
+    .hero-sub {
+      font-size: 18px; line-height: 1.65; color: var(--text-mid);
+      max-width: 48ch; margin-bottom: 32px; font-style: italic;
+    }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    /* NEWS */
+    .news-banner {
+      background: var(--blue); border-radius: var(--r-lg);
+      padding: 36px 42px; display: grid;
+      grid-template-columns: 1fr auto; gap: 36px; align-items: center;
+    }
+    .news-banner h3 { color: #fff; margin-bottom: 10px; font-size: clamp(20px,2.8vw,30px); }
+    .news-banner p { color: rgba(255,255,255,0.80); font-size: 17px; }
+    .news-eyebrow { color: rgba(255,255,255,0.55) !important; margin-bottom: 10px; }
+    .news-pill {
+      white-space: nowrap; padding: 14px 26px; border-radius: var(--r);
+      background: rgba(255,255,255,0.13); border: 1px solid rgba(255,255,255,0.2);
+      font-family: "Jost", sans-serif; font-size: 13px; color: #fff; text-align: center;
+    }
+    .news-pill strong { display: block; font-size: 17px; margin-bottom: 4px; }
+
+    /* ÜBER MICH */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 360px minmax(0, 1fr);
+      gap: 68px;
+      align-items: start;
+    }
+    .portrait-wrap {
+      position: sticky;
+      top: 160px;
+      border-radius: var(--r-lg);
+      overflow: visible;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .portrait-wrap img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      object-position: center center;
+    }
+    .hecate-under-portrait {
+      width: min(156%, 560px);
+      max-width: none;
+      margin: 56px auto 0;
+      opacity: 0.44;
+      mix-blend-mode: multiply;
+      filter: grayscale(0.08);
+    }
+    .about-content { padding-top: 4px; }
+    .about-content h2 { margin-bottom: 6px; }
+    .about-subtitle {
+      font-family: "Jost", sans-serif; font-size: 13px; color: var(--text-soft);
+      letter-spacing: 0.05em; margin-bottom: 26px; display: block;
+    }
+    .about-quote {
+      font-size: 20px; font-style: italic; color: var(--text-mid);
+      line-height: 1.65; margin-bottom: 30px;
+      padding-left: 20px; border-left: 2px solid var(--gold);
+    }
+    .timeline { list-style: none; padding: 0; margin: 0 0 34px; position: relative; }
+    .timeline::before {
+      content: ""; position: absolute; left: 6px; top: 10px; bottom: 10px;
+      width: 1px; background: linear-gradient(to bottom, var(--gold-light), var(--blue-line));
+    }
+    .timeline li {
+      padding: 5px 0 5px 28px; position: relative;
+      font-size: 16px; color: var(--text-mid); line-height: 1.65;
+    }
+    .timeline li::before {
+      content: ""; position: absolute; left: 1px; top: 13px;
+      width: 11px; height: 11px; border-radius: 50%;
+      background: var(--cream); border: 2px solid var(--gold);
+    }
+    .timeline-year {
+      font-family: "Jost", sans-serif; font-size: 11px; font-weight: 500;
+      letter-spacing: 0.10em; color: var(--gold); display: block; margin-bottom: 1px;
+    }
+    .about-flowtext-wrap {
+      position: relative;
+      margin-top: 12px;
+      isolation: isolate;
+    }
+    .about-flowtext-wrap > * {
+      position: relative;
+      z-index: 1;
+    }
+    .about-longtext p { font-size: 17px; }
+    .about-section-label {
+      display: block;
+      margin: 28px 0 12px;
+    }
+    #ueber {
+      position: relative;
+      overflow-x: clip;
+    }
+    #ueber .wrap,
+    .about-content,
+    .about-longtext,
+    .about-bridge {
+      position: relative;
+      z-index: 1;
+    }
+    .about-bridge {
+      margin-top: 40px; padding: 26px 30px;
+      background: linear-gradient(135deg, var(--blue-soft), var(--gold-soft));
+      border: 1px solid var(--blue-line); border-radius: var(--r);
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .about-bridge p { font-size: 17px; color: var(--text-mid); font-style: italic; }
+
+    /* LEISTUNGEN */
+    .services-header { max-width: 580px; margin-bottom: 52px; }
+    .service-feature {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+      border-radius: var(--r-lg); overflow: hidden;
+      border: 1px solid var(--blue-line); margin-bottom: 24px;
+      background: var(--warm-white);
+    }
+    .service-feature-img { min-height: 400px; overflow: hidden; }
+    .service-feature-img img { width: 100%; height: 100%; object-fit: cover; }
+    .service-feature-body {
+      padding: 42px 46px; display: flex; flex-direction: column; justify-content: center;
+    }
+    .service-feature-toggle {
+      display: none;
+      margin-top: 22px;
+      align-self: flex-start;
+      border: 1px solid var(--blue-line);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.78);
+      color: var(--blue-dark);
+      font-family: "Jost", sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 11px 16px;
+      cursor: pointer;
+    }
+    .service-feature-summary {
+      display: none;
+      margin: 4px 0 0;
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--text-soft);
+    }
+    .service-feature-toggle-label-less { display: none; }
+    .service-feature.is-collapsed .service-feature-toggle-label-more { display: inline; }
+    .service-feature.is-collapsed .service-feature-toggle-label-less { display: none; }
+    .service-feature:not(.is-collapsed) .service-feature-toggle-label-more { display: none; }
+    .service-feature:not(.is-collapsed) .service-feature-toggle-label-less { display: inline; }
+    .service-tag {
+      display: inline-block; margin-bottom: 16px; padding: 5px 14px;
+      border-radius: 999px; background: var(--blue-soft); border: 1px solid var(--blue-line);
+      font-family: "Jost", sans-serif; font-size: 10.5px; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--blue-dark);
+    }
+    .service-feature-body h3 { margin-bottom: 16px; color: var(--text); }
+    .service-feature-body p { font-size: 17px; }
+    .pse-links {
+      margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap;
+      font-family: "Jost", sans-serif; font-size: 12px; letter-spacing: 0.04em;
+    }
+    .pse-links a {
+      color: var(--blue); border-bottom: 1px solid var(--blue-line);
+      padding-bottom: 1px; transition: border-color 0.15s;
+    }
+    .pse-links a:hover { border-color: var(--blue); }
+    .methods-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; margin-bottom: 24px; }
+    .method-item {
+      background: var(--warm-white); border: 1px solid var(--blue-line);
+      border-radius: var(--r); overflow: hidden;
+    }
+    .method-item summary,
+    .method-card-static {
+      list-style: none; cursor: pointer; padding: 18px 18px 16px;
+      display: flex; flex-direction: column; gap: 10px;
+      position: relative;
+    }
+    .method-card-static { cursor: default; }
+    .method-item summary::-webkit-details-marker { display: none; }
+    .method-img { width: 100%; height: 175px; object-fit: cover; border-radius: 12px; }
+    /* ── Bilder-Veredelung: dezenter ohne Methodenverlust ── */
+    .service-feature-img,
+    .method-img-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+    .method-img-wrap { border-radius: 12px; }
+
+    /* Bild leicht abgemildert, aber Farbe und Details erhalten */
+    .service-feature-img img,
+    .method-img {
+      filter: saturate(0.92) contrast(0.96) brightness(1.04);
+    }
+
+    /* Weiche Vignette am Rand – schmilzt das Bild in die Seite */
+    .service-feature-img::after,
+    .method-img-wrap::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at center,
+          rgba(247,243,237,0) 55%,
+          rgba(247,243,237,0.18) 85%,
+          rgba(247,243,237,0.32) 100%),
+        linear-gradient(135deg,
+          rgba(201,167,94,0.08) 0%,
+          transparent 50%,
+          rgba(201,167,94,0.05) 100%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Goldener Hauchschein an der Innenkante – elegantes Detail */
+    .service-feature-img::before,
+    .method-img-wrap::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      box-shadow: inset 0 0 0 1px rgba(201,167,94,0.25);
+      border-radius: inherit;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+
+    .method-title { font-size: 21px; font-family: "Crimson Pro",serif; font-weight: 400; color: var(--text); line-height: 1.15; }
+    .method-sub { font-size: 15px; color: var(--text-soft); line-height: 1.55; margin-top: 2px; margin-bottom: 0; }
+    .method-toggle {
+      position: absolute;
+      top: 196px;
+      right: 18px;
+      width: 30px; height: 30px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--blue-soft); color: var(--blue); font-size: 20px; font-weight: 300;
+      z-index: 2;
+    }
+    .method-body {
+      padding: 14px 18px 16px; font-size: 16px; color: var(--text-mid);
+      line-height: 1.7; border-top: 1px solid var(--blue-line);
+    }
+    .method-body p {
+      font-size: inherit;
+      line-height: inherit;
+      margin: 0 0 12px;
+    }
+    .method-body p:last-child { margin-bottom: 0; }
+    .focus-box {
+      background: var(--warm-white); border: 1px solid var(--blue-line);
+      border-radius: var(--r); padding: 36px 42px;
+    }
+    .focus-box h3 { margin-bottom: 22px; }
+    .focus-list {
+      list-style: none; padding: 0;
+      display: grid; grid-template-columns: repeat(2,1fr); gap: 0 32px;
+    }
+    .focus-list li {
+      font-size: 17px; color: var(--text-mid); padding: 9px 0;
+      border-bottom: 1px solid var(--blue-line);
+      display: flex; gap: 11px; align-items: baseline;
+    }
+    .focus-list li::before { content: "–"; color: var(--gold); flex-shrink: 0; }
+
+    /* KONTAKT */
+    /* Logo-Akzent im Kontaktbereich */
+    #kontakt {
+      position: relative;
+      overflow-x: clip;
+    }
+    .contact-logo-backdrop {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0 0 6px;
+      pointer-events: none;
+      user-select: none;
+      overflow: visible;
+      min-height: 100%;
+    }
+    .contact-logo-backdrop img {
+      width: min(118%, 616px);
+      max-height: 100%;
+      height: auto;
+      object-fit: contain;
+      opacity: 0.8;
+      filter: none;
+      transform: translateY(0);
+    }
+    @media (max-width: 640px) {
+      .contact-logo-backdrop {
+        min-height: 210px;
+        padding: 8px 0 0;
+      }
+      .contact-logo-backdrop img {
+        width: min(96%, 352px);
+        max-height: 230px;
+      }
+    }
+    @media (max-width: 980px) {
+      .contact-logo-backdrop {
+        min-height: 240px;
+        padding: 10px 0 0;
+      }
+      .contact-logo-backdrop img {
+        width: min(100%, 462px);
+        max-height: 280px;
+      }
+    }
+    /* Kontakt-Layout über Logo */
+    #kontakt .wrap { position: relative; z-index: 1; }
+
+    .contact-layout { display: grid; grid-template-columns: 1fr 1.08fr; gap: 24px; align-items: stretch; }
+    .contact-right {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      min-height: 100%;
+      position: relative;
+      isolation: isolate;
+    }
+    .contact-form-card {
+      position: relative;
+      z-index: 2;
+    }
+    .contact-card {
+      background: var(--warm-white); border: 1px solid var(--blue-line);
+      border-radius: var(--r-lg); padding: 36px;
+    }
+    .contact-card h2 { margin-bottom: 14px; }
+    .contact-card > p { margin-bottom: 24px; }
+    .contact-freude {
+      margin-top: 20px; font-size: 17px; font-style: italic; color: var(--text-mid);
+    }
+    .contact-items { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+    .contact-item {
+      padding: 13px 17px; border-radius: 14px;
+      background: var(--blue-soft); border: 1px solid var(--blue-line);
+    }
+    .contact-item-label {
+      font-family: "Jost", sans-serif; font-size: 10px; letter-spacing: 0.17em;
+      text-transform: uppercase; color: var(--blue-dark); display: block; margin-bottom: 3px;
+    }
+    .contact-item-value { font-size: 16px; color: var(--text); line-height: 1.5; }
+    .contact-form-card {
+      background: var(--warm-white); border: 1px solid var(--blue-line);
+      border-radius: var(--r-lg); padding: 36px;
+    }
+    .contact-form-card h3 { margin-bottom: 5px; }
+    .contact-form-card > p { margin-bottom: 22px; font-size: 16px; }
+    .form { display: flex; flex-direction: column; gap: 14px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    label {
+      display: flex; flex-direction: column; gap: 6px;
+      font-family: "Jost", sans-serif; font-size: 11px;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-mid);
+    }
+    input, textarea {
+      font-family: "Crimson Pro", serif; font-size: 17px; color: var(--text);
+      background: var(--cream); border: 1px solid var(--blue-line);
+      border-radius: 12px; padding: 12px 16px; outline: none; transition: border-color 0.18s;
+    }
+    input:focus, textarea:focus { border-color: var(--blue); }
+    textarea { min-height: 126px; resize: vertical; }
+    .form-note { font-size: 13px; color: var(--text-soft); font-family: "Jost", sans-serif; }
+    .form-status {
+      min-height: 24px;
+      font-size: 14px;
+      color: var(--text-mid);
+      font-family: "Jost", sans-serif;
+    }
+    .form-status.is-success { color: var(--blue-dark); }
+    .form-status.is-error { color: #8f4d43; }
+    .hp-field {
+      position: absolute !important;
+      left: -9999px !important;
+      width: 1px !important;
+      height: 1px !important;
+      overflow: hidden !important;
+    }
+
+    /* LEGAL */
+    .legal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .legal-card {
+      background: var(--warm-white); border: 1px solid var(--blue-line);
+      border-radius: var(--r); padding: 30px;
+    }
+    .legal-card h3 { margin-bottom: 18px; }
+    .legal-items { display: flex; flex-direction: column; gap: 9px; }
+    .legal-item { padding: 11px 16px; border-radius: 12px; background: var(--blue-soft); }
+    .legal-item strong {
+      display: block; font-family: "Jost", sans-serif; font-size: 10px;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue-dark); margin-bottom: 2px;
+    }
+    .legal-item span { font-size: 15px; color: var(--text); }
+    .legal-list { list-style: none; padding: 0; }
+    .legal-list li {
+      font-size: 16px; color: var(--text-mid); padding: 9px 0;
+      border-bottom: 1px solid var(--blue-line); display: flex; gap: 10px;
+    }
+    .legal-list li::before { content: "→"; color: var(--blue); font-size: 13px; flex-shrink: 0; margin-top: 3px; }
+
+    /* FOOTER */
+    footer {
+      position: relative;
+      padding: 56px 0 32px;
+      border-top: 1px solid rgba(201,167,94,0.32);
+      background:
+        linear-gradient(180deg, rgba(244,239,232,0.96) 0%, rgba(236,230,220,0.98) 100%);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.9fr) minmax(0, 0.9fr);
+      gap: 34px;
+      align-items: start;
+      padding-bottom: 30px;
+    }
+    .footer-intro { max-width: 32rem; }
+    .footer-kicker {
+      display: inline-block;
+      margin-bottom: 14px;
+      font-family: "Jost", sans-serif;
+      font-size: 10.5px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .footer-intro p,
+    .footer-col p,
+    .footer-col li {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.68;
+      color: var(--text-soft);
+    }
+    .footer-col h4 {
+      font-size: 18px;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 10px;
+    }
+    .footer-col li {
+      position: relative;
+      padding-left: 16px;
+    }
+    .footer-col li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(201,167,94,0.72);
+    }
+    .footer-note {
+      margin-top: 14px;
+      max-width: 28rem;
+    }
+    .footer-col a:hover { color: var(--blue-dark); }
+    .footer-bottom {
+      margin-top: 0;
+      padding-top: 18px;
+      border-top: 1px solid rgba(104,128,160,0.16);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-family: "Jost", sans-serif;
+      font-size: 11.5px;
+      letter-spacing: 0.04em;
+      color: var(--text-soft);
+    }
+    .footer-legal {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .footer-legal a {
+      font-family: "Jost", sans-serif;
+      font-size: 11.5px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-soft);
+      padding: 8px 0;
+      transition: color 0.18s ease;
+    }
+    .footer-legal a:hover { color: var(--blue-dark); }
+
+    .back-to-top {
+      position: fixed; right: 24px; bottom: 24px; z-index: 120;
+      width: 52px; height: 52px; border-radius: 999px;
+      border: 1px solid rgba(104,128,160,0.22);
+      background: rgba(253,250,246,0.92);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 14px 32px rgba(44,33,24,0.12);
+      color: var(--blue-dark); cursor: pointer;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 22px; line-height: 1;
+      opacity: 0; visibility: hidden; transform: translateY(10px);
+      transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease, background 0.18s ease;
+    }
+    .back-to-top.is-visible {
+      opacity: 1; visibility: visible; transform: translateY(0);
+    }
+    .back-to-top:hover { background: rgba(247,243,237,0.98); transform: translateY(-2px); }
+    .back-to-top:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+
+    /* RESPONSIVE */
+    @media (max-width: 980px) {
+      .hero {
+        min-height: auto;
+      }
+      .hero-media img { object-position: 68% center; }
+      .hero::before {
+        background: linear-gradient(
+          180deg,
+          rgba(247,243,237,0.92) 0%,
+          rgba(247,243,237,0.88) 35%,
+          rgba(247,243,237,0.74) 58%,
+          rgba(247,243,237,0.26) 100%
+        );
+      }
+      .hero-inner-single { padding: 36px 0 40px; }
+      .hero-text-single { max-width: 100%; }
+      .brand-logo { height: 86px; width: auto; max-width: min(100%, 304px); }
+      .topbar-inner { min-height: 104px; padding: 5px 0; }
+      .about-grid,
+      .service-feature,
+      .contact-layout,
+      .footer-grid,
+      .methods-grid,
+      .legal-grid {
+        grid-template-columns: 1fr;
+      }
+      .about-grid,
+      .about-copy-grid,
+      .service-feature,
+      .contact-layout,
+      .footer-grid,
+      .methods-grid,
+      .focus-list,
+      .legal-grid {
+        padding-right: 0;
+      }
+      .about-grid { gap: 32px; }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+        padding-bottom: 24px;
+      }
+      .contact-layout { gap: 18px; }
+      .methods-grid { gap: 14px; }
+      .focus-list { grid-template-columns: 1fr; gap: 0; }
+      .portrait-wrap {
+        position: static;
+        width: min(100%, 400px);
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      nav { display: none; }
+      nav.open {
+        display: flex; flex-direction: column; position: absolute;
+        top: calc(100% + 4px); left: 20px; right: 20px;
+        background: rgba(247,243,237,0.98); border: 1px solid var(--blue-line);
+        border-radius: var(--r); padding: 20px; gap: 16px;
+        box-shadow: 0 24px 50px rgba(44,33,24,0.1); z-index: 200;
+      }
+      .menu-toggle { display: inline-flex; }
+      .topbar { position: relative; }
+      .service-feature-img { min-height: 240px; }
+      .service-feature-body { padding: 26px; }
+      .news-banner { grid-template-columns: 1fr; gap: 18px; }
+      .about-bridge { flex-direction: column; align-items: flex-start; }
+      .footer-bottom { align-items: flex-start; }
+    }
+    @media (max-width: 880px) {
+      .hecate-under-portrait {
+        width: min(100%, 320px);
+        margin-top: 30px;
+      }
+    }
+    @media (max-width: 640px) {
+      .section { padding: 64px 0; }
+      .topbar-inner { min-height: 86px; gap: 14px; padding: 4px 0; }
+      .brand-logo { height: 74px; width: auto; max-width: calc(100vw - 128px); }
+      nav.open { left: 14px; right: 14px; padding: 18px; }
+      .hero::before {
+        background: linear-gradient(
+          180deg,
+          rgba(247,243,237,0.84) 0%,
+          rgba(247,243,237,0.72) 34%,
+          rgba(247,243,237,0.40) 68%,
+          rgba(247,243,237,0.14) 100%
+        );
+      }
+      .hero-location {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        white-space: normal;
+      }
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .hero-actions .btn {
+        width: 100%;
+      }
+      .news-banner {
+        padding: 22px 20px;
+        border-radius: 28px;
+        gap: 16px;
+      }
+      .news-pill {
+        white-space: normal;
+        width: 100%;
+        justify-self: stretch;
+        text-align: center;
+      }
+      .news-banner h3 { margin-bottom: 12px; }
+      .news-banner p { font-size: 16px; line-height: 1.82; }
+      .form-row { grid-template-columns: 1fr; }
+      h1 { font-size: 40px; }
+      .hero-sub { font-size: 17px; line-height: 1.74; }
+      h2 { font-size: 34px; }
+      h3 { font-size: 26px; }
+      .about-grid {
+        position: relative;
+        gap: 26px;
+      }
+      .about-quote {
+        font-size: 18px;
+        padding-left: 16px;
+        margin-bottom: 22px;
+        line-height: 1.72;
+      }
+      .about-subtitle { margin-bottom: 18px; }
+      .portrait-wrap {
+        width: min(100%, 300px);
+        margin: 0 auto;
+      }
+      .about-content {
+        position: relative;
+        z-index: 1;
+      }
+      .about-flowtext-wrap { margin-top: 10px; }
+      .hecate-under-portrait {
+        position: absolute;
+        top: 1390px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(124vw, 500px);
+        max-width: none;
+        margin: 0;
+        opacity: 0.30;
+        z-index: 0;
+        pointer-events: none;
+      }
+      .timeline { margin-bottom: 26px; }
+      .timeline li {
+        padding: 4px 0 4px 24px;
+        font-size: 16px;
+        line-height: 1.68;
+      }
+      .about-longtext p {
+        font-size: 17px;
+        line-height: 1.78;
+      }
+      .about-section-label {
+        margin-top: 24px;
+      }
+      .contact-items { gap: 12px; }
+      .contact-item { padding: 14px 15px; }
+      input, textarea { font-size: 17px; }
+      .contact-card, .contact-form-card, .legal-card { padding: 24px; }
+      .method-item summary, .method-card-static { padding: 16px; }
+      .method-img { height: 160px; }
+      .focus-box { padding: 22px 20px; }
+      .hero { min-height: auto; }
+      .hero-media img { object-position: 60% center; }
+      .services-header { margin-bottom: 32px; }
+      .service-feature {
+        border-radius: 26px;
+        margin-bottom: 18px;
+      }
+      .service-feature-img { min-height: 220px; }
+      .service-feature-body { padding: 22px 20px; }
+      .service-feature-body h3 { margin-bottom: 12px; }
+      .service-feature-body p { font-size: 17px; line-height: 1.76; }
+      .service-feature-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 0;
+        padding: 14px 18px;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        text-transform: none;
+        border-radius: 18px;
+      }
+      .service-feature-toggle::after {
+        content: "+";
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1;
+      }
+      .service-feature:not(.is-collapsed) .service-feature-toggle::after {
+        content: "−";
+      }
+      .service-feature-summary {
+        display: block;
+      }
+      .service-feature.is-collapsed .service-feature-body-copy,
+      .service-feature.is-collapsed .pse-links {
+        display: none;
+      }
+      .service-feature.is-collapsed .service-feature-summary {
+        display: block;
+      }
+      .service-feature:not(.is-collapsed) .service-feature-summary {
+        display: none;
+      }
+      .footer-col li {
+        padding-left: 14px;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+      }
+      .back-to-top { right: 16px; bottom: 16px; width: 48px; height: 48px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <img class="brand-logo" src="./assets/new_branding/header_banderole_latest_optimized.png" alt="Heilpraxis Theresa Helfensteller" width="1140" height="570" fetchpriority="high" decoding="async">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menü</button>
+    <nav id="site-nav">
+      <a href="#start">Start</a>
+      <a href="#aktuelles">Aktuelles</a>
+      <a href="#ueber">Über mich</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn btn-primary" href="#kontakt">Erstkontakt anfragen</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ① HERO: nur Text auf Sonnenblume -->
+  <section class="hero" id="start">
+    <div class="hero-media" aria-hidden="true">
+      <img src="./assets/hero/hero_sunflower.jpg" alt="" width="1600" height="800" sizes="100vw" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero-inner-single">
+      <div class="hero-text-single">
+        <div class="hero-location">Heilpraxis in Fellbach am Kappelberg · ab 01.06.2026</div>
+        <h1>Wenn Beschwerden bestehen bleiben</h1>
+        <p class="hero-sub">Im Mittelpunkt stehen Zeit für eine ausführliche Anamnese, persönliche Begleitung und ein ganzheitlicher Blick auf anhaltende Beschwerden, Erschöpfung sowie Belastungen im Zusammenhang mit Stress.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#kontakt">Erstkontakt anfragen</a>
+          <a class="btn btn-outline" href="#leistungen">Leistungen entdecken</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ② AKTUELLES -->
+  <section class="section" id="aktuelles">
+    <div class="wrap">
+      <div class="news-banner">
+        <div>
+          <span class="eyebrow news-eyebrow">Aktuelles aus der Praxis</span>
+          <h3>Terminanfragen aktuell per E-Mail</h3>
+          <p>Terminanfragen sind aktuell per Kontaktformular oder direkt per E-Mail möglich. Eine Festnetznummer folgt in Kürze. Bitte teilen Sie mir kurz Ihr Anliegen sowie eine passende Rückrufmöglichkeit mit. Ich melde mich zeitnah persönlich zurück, und wir schauen anschließend gemeinsam nach einem passenden Termin, sofern Sie dies wünschen.</p>
+        </div>
+        <div class="news-pill">
+          <strong>Bestellpraxis</strong>
+          Termine nach Vereinbarung
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ③ ÜBER MICH -->
+  <section class="section" id="ueber">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="portrait-wrap">
+          <img src="./assets/embedded/inline-01.jpg" alt="Porträt von Theresa Helfensteller">
+          <img class="hecate-under-portrait" src="./assets/new_branding/hecate.png" alt="" aria-hidden="true">
+        </div>
+        <div class="about-content">
+            <span class="eyebrow">Über mich – Werdegang, Haltung und Arbeitsweise</span>
+            <h2>Theresa Maria Helfensteller</h2>
+            <span class="about-subtitle">Heilpraktikerin · Pharmatechnikerin · Fellbach</span>
+            <p class="about-quote">„Ich möchte Beschwerden ernst nehmen, individuelle Zusammenhänge betrachten und gemeinsam mit Ihnen nach ganzheitlichen Ansätzen suchen – ruhig, empathisch und ohne Druck."</p>
+
+
+            <span class="eyebrow">Werdegang</span>
+            <ul class="timeline">
+              <li><span class="timeline-year">2013</span>Abitur am Gustav-Stresemann-Gymnasium in Fellbach-Schmiden</li>
+              <li><span class="timeline-year">2013 – 2018</span>Studium der Pharmatechnik mit Schwerpunkt Forschung und Entwicklung an der Hochschule Sigmaringen (Bachelor of Science)</li>
+              <li><span class="timeline-year">2018 – 2022</span>Qualitätsmanagerin für Arzneimittel bei der Weleda AG in Schwäbisch Gmünd</li>
+              <li><span class="timeline-year">2022 – 2025</span>Heilpraktikerausbildung an der ILS Hamburg, Abschlussprüfungen am Gesundheitsamt Heilbronn mit Erteilung der Erlaubnis zur Ausübung der Heilkunde (Heilpraktikererlaubnis)</li>
+              <li><span class="timeline-year">Im Anschluss</span>Hospitationen in diversen Naturheilpraxen</li>
+              <li><span class="timeline-year">Ab 01.06.2026</span>Eigene Heilpraxis in Fellbach (Schwerpunkt Psychosomatik)</li>
+            </ul>
+
+            <div class="about-flowtext-wrap">
+              <div class="about-longtext">
+                <p>Mein Name ist Theresa Maria Helfensteller. Ich bin in Stuttgart Bad Cannstatt geboren und in Fellbach aufgewachsen.</p>
+                <p>Nach meinem Abitur studierte ich Pharmatechnik an der Hochschule in Sigmaringen mit den Schwerpunkten Forschung und Entwicklung von Arzneimitteln, der Herstellung von Kosmetika sowie Qualitätsmanagement. Dabei galt mein besonderes Interesse der Verbindung von moderner Arzneimittelentwicklung und naturbezogenen sowie ergänzenden Ansätzen.</p>
+                <p>Im Rahmen meiner Bachelor-Arbeit im Bereich der Krebs- und Alterungsforschung vertiefte ich mein Interesse an ganzheitlichen Fragestellungen im Gesundheitskontext. Anschließend arbeitete ich mehrere Jahre bei der Weleda AG als internationale Qualitätsmanagerin im Bereich anthroposophischer Arzneimittel und Naturkosmetik.</p>
+                <p>Parallel dazu beschäftige ich mich seit vielen Jahren intensiv mit Phytotherapie, homöopathischen Arzneimitteln und naturbezogener Kosmetik.</p>
+                <p>Der Wunsch, Menschen direkter zu begleiten, führte mich in die Ausbildung zur Heilpraktikerin. Ergänzend absolvierte ich Hospitationen in verschiedenen Naturheilpraxen, um Einblicke in unterschiedliche Arbeitsweisen zu gewinnen und meine eigene Haltung weiterzuentwickeln.</p>
+                <span class="eyebrow about-section-label">Meine Haltung und Arbeitsweise</span>
+                <p>Im Mittelpunkt meiner Tätigkeit stehen eine sorgfältige Anamnese, ausreichend Zeit für persönliche Gespräche sowie ein ganzheitlicher Blick auf körperliche, seelische und biografische Zusammenhänge.</p>
+                <p>Ich begleite Menschen in belastenden Lebensphasen individuell, aufmerksam und respektvoll.</p>
+                <p>Im Fokus steht eine ruhige, zugewandte und wertschätzende Arbeitsweise ohne Zeit- oder Leistungsdruck.</p>
+                <span class="eyebrow about-section-label">Hinweis</span>
+                <p>Bitte beachten Sie: Naturheilkundliche und alternative Verfahren gehören überwiegend zur Erfahrungsheilkunde und sind wissenschaftlich nicht in allen Bereichen anerkannt. Sie ersetzen keine ärztliche Diagnose oder Behandlung und verstehen sich als begleitende Maßnahmen.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ④ LEISTUNGEN -->
+  <section class="section" id="leistungen">
+    <div class="wrap">
+      <div class="services-header">
+        <span class="eyebrow">Leistungen</span>
+        <h2>Leistungen</h2>
+        <p>Im Rahmen meiner Tätigkeit biete ich folgende naturheilkundliche Leistungen an:</p>
+      </div>
+
+      <div class="methods-grid services-equal">
+        <article class="method-item">
+          <div class="method-card-static">
+            <div class="method-img-wrap"><img class="method-img" src="./assets/embedded/inline-02.jpg" alt="Hände als Motiv für Begleitung und Psychosomatische Energetik"></div>
+            <span class="service-tag" style="align-self:flex-start">Leistung</span>
+            <div class="method-title">Psychosomatische Energetik (PSE)</div>
+          </div>
+        </article>
+        <article class="method-item">
+          <div class="method-card-static">
+            <div class="method-img-wrap"><img class="method-img" src="./assets/embedded/inline-03.jpg" alt="Ernährungsbegleitung"></div>
+            <span class="service-tag" style="align-self:flex-start">Leistung</span>
+            <div class="method-title">Ernährungsbegleitung und Beratung zu Nahrungsergänzungsmitteln</div>
+          </div>
+        </article>
+        <article class="method-item">
+          <div class="method-card-static">
+            <div class="method-img-wrap"><img class="method-img" src="./assets/embedded/inline-04.jpg" alt="Phytotherapie, Ordnungstherapie, Bewegung und Hydrotherapie"></div>
+            <span class="service-tag" style="align-self:flex-start">Leistung</span>
+            <div class="method-title">Phytotherapie, Ordnungstherapie sowie naturheilkundliche Empfehlungen zu Bewegungstherapie und Hydrotherapie nach den Grundsätzen von Sebastian Kneipp</div>
+          </div>
+        </article>
+        <article class="method-item">
+          <div class="method-card-static">
+            <div class="method-img-wrap"><img class="method-img" src="./assets/embedded/inline-06.jpg" alt="Naturkosmetik und Produktempfehlungen"></div>
+            <span class="service-tag" style="align-self:flex-start">Leistung</span>
+            <div class="method-title">Beratung zu Naturkosmetik und Produktempfehlungen für die Anwendung zu Hause</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="focus-box">
+        <span class="eyebrow">Behandlungsschwerpunkte</span>
+        <ul class="focus-list">
+          <li>Erschöpfungszustände und reduzierte Belastbarkeit</li>
+          <li>Innere Unruhe und emotionale Belastungen</li>
+          <li>Grübelneigung und psychische Anspannung</li>
+          <li>Schlaf- und Konzentrationsprobleme</li>
+          <li>Länger bestehende Beschwerden</li>
+          <li>Wiederkehrende Infekte</li>
+          <li>Verdauungsprobleme und subjektive Unverträglichkeiten bestimmter Nahrungsmittel</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑤ KONTAKT -->
+  <section class="section" id="kontakt">
+    <div class="wrap">
+      <div class="contact-layout">
+        <div class="contact-card">
+          <span class="eyebrow">Kontakt</span>
+          <h2>Erstkontakt und Terminvereinbarung</h2>
+          <p>Ich führe meine Praxis als Bestellpraxis, das heißt ausschließlich nach vorheriger Terminvereinbarung.</p>
+          <p>Sie können mir eine Anfrage über das Kontaktformular, per E-Mail oder telefonisch über den Anrufbeantworter zukommen lassen. Ich melde mich zeitnah persönlich zurück, um das weitere Vorgehen mit Ihnen zu besprechen.</p>
+          <p><strong>Hinweis zum Datenschutz</strong><br>Aus Datenschutzgründen empfehle ich, medizinische Unterlagen, Befunde oder andere sensible Informationen nicht per E-Mail zu übermitteln, sondern zum ersten Termin in die Praxis mitzubringen.</p>
+          <p class="contact-freude">Ich freue mich auf Ihre Kontaktaufnahme.</p>
+          <div class="contact-items">
+            <div class="contact-item"><span class="contact-item-label">E-Mail</span><span class="contact-item-value">kontakt@heilpraxis-theresa-helfensteller.de</span></div>
+            <div class="contact-item"><span class="contact-item-label">Festnetz</span><span class="contact-item-value">folgt</span></div>
+            <div class="contact-item"><span class="contact-item-label">Praxisadresse</span><span class="contact-item-value">Vordere Straße 37 · 70734 Fellbach</span></div>
+            <div class="contact-item">
+              <span class="contact-item-label">Wegbeschreibung</span>
+              <span class="contact-item-value">Meine Praxis befindet sich am Kappelberg, fußläufig zur neuen Kelter. Das Haus liegt direkt an der Bushaltestelle „Kappelbergstraße“ der Linie 60. Der Eingang befindet sich auf der rechten Seite. Wenn Sie mit dem Auto anreisen, stehen im Wohngebiet ausreichend kostenfreie Parkplätze zur Verfügung.</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="contact-form-card">
+            <span class="eyebrow">Kontaktformular</span>
+            <h3>Schreiben Sie mir</h3>
+            <form class="form" id="contactForm" action="https://formspree.io/f/xblovrpy" method="POST" accept-charset="UTF-8">
+              <div class="form-row">
+                <label>Name<input type="text" name="name" placeholder="Vor- und Nachname" required></label>
+                <label>E-Mail<input type="email" name="email" placeholder="name@example.de" autocomplete="email" required></label>
+              </div>
+              <div class="form-row">
+                <label>Erreichbarkeit<input type="text" name="reachability" placeholder="z. B. vormittags" autocomplete="off"></label>
+                <label>Anliegen<input type="text" name="subject" placeholder="Grund der Anfrage" autocomplete="off" required></label>
+              </div>
+              <label>Nachricht<textarea name="message" placeholder="Ihre Nachricht" required></textarea></label>
+              <label class="hp-field" aria-hidden="true">Bitte dieses Feld leer lassen<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+              <input type="hidden" name="_subject" value="Neue Anfrage über die Website von Theresa Helfensteller">
+              <input type="hidden" name="_language" value="de">
+              <p class="form-note">Bitte keine medizinischen Berichte, Bilder oder Diagnosen über das Formular senden.</p>
+              <p class="form-note">Mit dem Absenden stimmen Sie zu, dass Ihre Angaben zur Bearbeitung Ihrer Anfrage verarbeitet werden. Details finden Sie in der <a href="./datenschutz.html">Datenschutzerklärung</a>.</p>
+              <div class="form-status" id="formStatus" aria-live="polite"></div>
+              <button class="btn btn-primary" type="submit" style="align-self:flex-start">Anfrage senden</button>
+            </form>
+          </div>
+          <div class="contact-logo-backdrop" aria-hidden="true">
+            <img src="./assets/new_branding/Webseite_3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-intro">
+        <span class="footer-kicker">Heilpraxis in Fellbach</span>
+        <p>Im Mittelpunkt stehen Zeit für eine ausführliche Anamnese, persönliche Begleitung und ein ganzheitlicher Blick auf anhaltende Beschwerden, Erschöpfung sowie Belastungen im Zusammenhang mit Stress.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li>kontakt@heilpraxis-theresa-helfensteller.de</li>
+          <li>Vordere Straße 37</li>
+          <li>70734 Fellbach</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Praxis</h4>
+        <ul>
+          <li>Termine nach Vereinbarung</li>
+          <li>Bestellpraxis</li>
+          <li>Terminanfragen per Formular</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Heilpraxis Theresa Helfensteller</span>
+      <div class="footer-legal">
+        <a href="./impressum.html">Impressum</a>
+        <a href="./datenschutz.html">Datenschutz</a>
+      </div>
+      <span>Fellbach am Kappelberg</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" type="button" aria-label="Schnell nach oben">↑</button>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+  }
+  const form = document.getElementById('contactForm');
+  const formStatus = document.getElementById('formStatus');
+  const mobileFeature = document.querySelector('[data-mobile-collapsible]');
+  const mobileFeatureToggle = mobileFeature?.querySelector('.service-feature-toggle');
+  if (mobileFeature && mobileFeatureToggle) {
+    mobileFeatureToggle.addEventListener('click', event => {
+      event.preventDefault();
+      const collapsed = mobileFeature.classList.toggle('is-collapsed');
+      mobileFeatureToggle.setAttribute('aria-expanded', String(!collapsed));
+    });
+  }
+  if (form) {
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      if (formStatus) {
+        formStatus.textContent = 'Ihre Anfrage wird gerade gesendet …';
+        formStatus.className = 'form-status';
+      }
+      const submitButton = form.querySelector('button[type="submit"]');
+      if (submitButton) submitButton.disabled = true;
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (!response.ok) throw new Error('Form submit failed');
+        form.reset();
+        if (formStatus) {
+          formStatus.textContent = 'Vielen Dank. Ihre Anfrage wurde erfolgreich gesendet.';
+          formStatus.className = 'form-status is-success';
+        }
+      } catch (error) {
+        if (formStatus) {
+          formStatus.textContent = 'Das Absenden hat gerade nicht funktioniert. Bitte versuchen Sie es erneut oder schreiben Sie direkt an kontakt@heilpraxis-theresa-helfensteller.de.';
+          formStatus.className = 'form-status is-error';
+        }
+      } finally {
+        if (submitButton) submitButton.disabled = false;
+      }
+    });
+  }
+  document.querySelectorAll('.method-item details').forEach(det => {
+    det.addEventListener('toggle', () => {
+      const btn = det.querySelector('.method-toggle');
+      if (btn) btn.textContent = det.open ? '−' : '+';
+    });
+  });
+  const topbar = document.querySelector('.topbar');
+  const getAnchorOffset = target => {
+    const topbarHeight = topbar ? topbar.offsetHeight : 0;
+    const revealOffset = target.id === 'aktuelles' ? 84 : 68;
+    return Math.max(
+      0,
+      target.getBoundingClientRect().top + window.scrollY - topbarHeight
+        + revealOffset
+    );
+  };
+  const scrollToAnchor = target => {
+    window.scrollTo({ top: getAnchorOffset(target), behavior: 'smooth' });
+  };
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', event => {
+      const href = link.getAttribute('href');
+      if (!href || href === '#') return;
+      const target = document.querySelector(href);
+      if (!target) return;
+      event.preventDefault();
+      scrollToAnchor(target);
+      history.replaceState(null, '', href);
+    });
+  });
+  window.addEventListener('load', () => {
+    if (!window.location.hash) return;
+    const target = document.querySelector(window.location.hash);
+    if (!target) return;
+    window.scrollTo({ top: getAnchorOffset(target), behavior: 'auto' });
+  });
+  const backToTop = document.querySelector('.back-to-top');
+  if (backToTop) {
+    const updateBackToTop = () => {
+      backToTop.classList.toggle('is-visible', window.scrollY > 500);
+    };
+    updateBackToTop();
+    window.addEventListener('scroll', updateBackToTop, { passive: true });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+</script>
+</body>
+</html>
