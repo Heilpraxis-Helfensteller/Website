@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://heilpraxis-theresa-helfensteller.de/sitemap.xml
