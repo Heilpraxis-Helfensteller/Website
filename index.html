@@ -136,11 +136,23 @@
       --r-lg:       28px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; }
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+      background: linear-gradient(180deg, var(--cream) 0%, var(--cream) 70%, #ece6dc 100%);
+    }
     body {
       font-family: "Crimson Pro", Georgia, serif;
-      background: var(--cream); color: var(--text); line-height: 1.78;
+      min-height: 100vh;
+      background: transparent; color: var(--text); line-height: 1.78;
       overflow-x: clip;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: -40vh 0;
+      z-index: -1;
+      pointer-events: none;
+      background: linear-gradient(180deg, var(--cream) 0%, var(--cream) 68%, #ece6dc 100%);
     }
     img { display: block; max-width: 100%; }
     a { color: inherit; text-decoration: none; }
