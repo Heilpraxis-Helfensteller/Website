@@ -24,7 +24,7 @@
   <link rel="icon" type="image/png" sizes="48x48" href="./assets/favicon/favicon-48.png">
   <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/favicon-192.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-  <link rel="preload" as="image" href="./assets/new_branding/header_banderole_latest_optimized.png" fetchpriority="high">
+  <link rel="preload" as="image" href="./assets/new_branding/header_banderole_latest_optimized.png">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -128,7 +128,7 @@
       --blue-line:  rgba(104,128,160,0.15);
       --text:       #2c2118;
       --text-mid:   #584d44;
-      --text-soft:  #8a7e76;
+      --text-soft:  #71665f;
       --gold:       #c9a75e;
       --gold-light: #e8d5a3;
       --gold-soft:  rgba(201,167,94,0.12);
@@ -296,7 +296,7 @@
       padding: 36px 42px; display: grid;
       grid-template-columns: 1fr auto; gap: 36px; align-items: center;
     }
-    .news-banner h3 { color: #fff; margin-bottom: 10px; font-size: clamp(20px,2.8vw,30px); }
+    .news-banner h2 { color: #fff; margin-bottom: 10px; font-size: clamp(20px,2.8vw,30px); }
     .news-banner p { color: rgba(255,255,255,0.80); font-size: 17px; }
     .news-eyebrow { color: rgba(255,255,255,0.55) !important; margin-bottom: 10px; }
     .news-pill {
@@ -386,77 +386,18 @@
     }
     #ueber .wrap,
     .about-content,
-    .about-longtext,
-    .about-bridge {
+    .about-longtext {
       position: relative;
       z-index: 1;
     }
-    .about-bridge {
-      margin-top: 40px; padding: 26px 30px;
-      background: linear-gradient(135deg, var(--blue-soft), var(--gold-soft));
-      border: 1px solid var(--blue-line); border-radius: var(--r);
-      display: flex; align-items: center; justify-content: space-between; gap: 24px;
-    }
-    .about-bridge p { font-size: 17px; color: var(--text-mid); font-style: italic; }
-
     /* LEISTUNGEN */
     .services-header { max-width: 580px; margin-bottom: 52px; }
-    .service-feature {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
-      border-radius: var(--r-lg); overflow: hidden;
-      border: 1px solid var(--blue-line); margin-bottom: 24px;
-      background: var(--warm-white);
-    }
-    .service-feature-img { min-height: 400px; overflow: hidden; }
-    .service-feature-img img { width: 100%; height: 100%; object-fit: cover; }
-    .service-feature-body {
-      padding: 42px 46px; display: flex; flex-direction: column; justify-content: center;
-    }
-    .service-feature-toggle {
-      display: none;
-      margin-top: 22px;
-      align-self: flex-start;
-      border: 1px solid var(--blue-line);
-      border-radius: 999px;
-      background: rgba(255,255,255,0.78);
-      color: var(--blue-dark);
-      font-family: "Jost", sans-serif;
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      padding: 11px 16px;
-      cursor: pointer;
-    }
-    .service-feature-summary {
-      display: none;
-      margin: 4px 0 0;
-      font-size: 15px;
-      line-height: 1.65;
-      color: var(--text-soft);
-    }
-    .service-feature-toggle-label-less { display: none; }
-    .service-feature.is-collapsed .service-feature-toggle-label-more { display: inline; }
-    .service-feature.is-collapsed .service-feature-toggle-label-less { display: none; }
-    .service-feature:not(.is-collapsed) .service-feature-toggle-label-more { display: none; }
-    .service-feature:not(.is-collapsed) .service-feature-toggle-label-less { display: inline; }
     .service-tag {
       display: inline-block; margin-bottom: 16px; padding: 5px 14px;
       border-radius: 999px; background: var(--blue-soft); border: 1px solid var(--blue-line);
       font-family: "Jost", sans-serif; font-size: 10.5px; letter-spacing: 0.13em;
       text-transform: uppercase; color: var(--blue-dark);
     }
-    .service-feature-body h3 { margin-bottom: 16px; color: var(--text); }
-    .service-feature-body p { font-size: 17px; }
-    .pse-links {
-      margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap;
-      font-family: "Jost", sans-serif; font-size: 12px; letter-spacing: 0.04em;
-    }
-    .pse-links a {
-      color: var(--blue); border-bottom: 1px solid var(--blue-line);
-      padding-bottom: 1px; transition: border-color 0.15s;
-    }
-    .pse-links a:hover { border-color: var(--blue); }
     .methods-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; margin-bottom: 24px; }
     .method-item {
       background: var(--warm-white); border: 1px solid var(--blue-line);
@@ -472,7 +413,6 @@
     .method-item summary::-webkit-details-marker { display: none; }
     .method-img { width: 100%; height: 175px; object-fit: cover; border-radius: 12px; }
     /* ── Bilder-Veredelung: dezenter ohne Methodenverlust ── */
-    .service-feature-img,
     .method-img-wrap {
       position: relative;
       overflow: hidden;
@@ -480,13 +420,11 @@
     .method-img-wrap { border-radius: 12px; }
 
     /* Bild leicht abgemildert, aber Farbe und Details erhalten */
-    .service-feature-img img,
     .method-img {
       filter: saturate(0.92) contrast(0.96) brightness(1.04);
     }
 
     /* Weiche Vignette am Rand – schmilzt das Bild in die Seite */
-    .service-feature-img::after,
     .method-img-wrap::after {
       content: "";
       position: absolute;
@@ -505,7 +443,6 @@
     }
 
     /* Goldener Hauchschein an der Innenkante – elegantes Detail */
-    .service-feature-img::before,
     .method-img-wrap::before {
       content: "";
       position: absolute;
@@ -519,15 +456,6 @@
 
     .method-title { font-size: 21px; font-family: "Crimson Pro",serif; font-weight: 400; color: var(--text); line-height: 1.15; }
     .method-sub { font-size: 15px; color: var(--text-soft); line-height: 1.55; margin-top: 2px; margin-bottom: 0; }
-    .method-toggle {
-      position: absolute;
-      top: 196px;
-      right: 18px;
-      width: 30px; height: 30px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      background: var(--blue-soft); color: var(--blue); font-size: 20px; font-weight: 300;
-      z-index: 2;
-    }
     .method-body {
       padding: 14px 18px 16px; font-size: 16px; color: var(--text-mid);
       line-height: 1.7; border-top: 1px solid var(--blue-line);
@@ -673,26 +601,6 @@
     }
 
     /* LEGAL */
-    .legal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-    .legal-card {
-      background: var(--warm-white); border: 1px solid var(--blue-line);
-      border-radius: var(--r); padding: 30px;
-    }
-    .legal-card h3 { margin-bottom: 18px; }
-    .legal-items { display: flex; flex-direction: column; gap: 9px; }
-    .legal-item { padding: 11px 16px; border-radius: 12px; background: var(--blue-soft); }
-    .legal-item strong {
-      display: block; font-family: "Jost", sans-serif; font-size: 10px;
-      letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue-dark); margin-bottom: 2px;
-    }
-    .legal-item span { font-size: 15px; color: var(--text); }
-    .legal-list { list-style: none; padding: 0; }
-    .legal-list li {
-      font-size: 16px; color: var(--text-mid); padding: 9px 0;
-      border-bottom: 1px solid var(--blue-line); display: flex; gap: 10px;
-    }
-    .legal-list li::before { content: "→"; color: var(--blue); font-size: 13px; flex-shrink: 0; margin-top: 3px; }
-
     /* FOOTER */
     footer {
       position: relative;
@@ -827,21 +735,17 @@
       .brand-logo { height: 86px; width: auto; max-width: min(100%, 304px); }
       .topbar-inner { min-height: 104px; padding: 5px 0; }
       .about-grid,
-      .service-feature,
       .contact-layout,
       .footer-grid,
-      .methods-grid,
-      .legal-grid {
+      .methods-grid {
         grid-template-columns: 1fr;
       }
       .about-grid,
       .about-copy-grid,
-      .service-feature,
       .contact-layout,
       .footer-grid,
       .methods-grid,
-      .focus-list,
-      .legal-grid {
+      .focus-list {
         padding-right: 0;
       }
       .about-grid { gap: 32px; }
@@ -869,10 +773,7 @@
       }
       .menu-toggle { display: inline-flex; }
       .topbar { position: relative; }
-      .service-feature-img { min-height: 240px; }
-      .service-feature-body { padding: 26px; }
       .news-banner { grid-template-columns: 1fr; gap: 18px; }
-      .about-bridge { flex-direction: column; align-items: flex-start; }
       .footer-bottom { align-items: flex-start; }
     }
     @media (max-width: 880px) {
@@ -919,7 +820,7 @@
         justify-self: stretch;
         text-align: center;
       }
-      .news-banner h3 { margin-bottom: 12px; }
+      .news-banner h2 { margin-bottom: 12px; }
       .news-banner p { font-size: 16px; line-height: 1.82; }
       .form-row { grid-template-columns: 1fr; }
       h1 { font-size: 40px; }
@@ -974,55 +875,13 @@
       .contact-items { gap: 12px; }
       .contact-item { padding: 14px 15px; }
       input, textarea { font-size: 17px; }
-      .contact-card, .contact-form-card, .legal-card { padding: 24px; }
+      .contact-card, .contact-form-card { padding: 24px; }
       .method-item summary, .method-card-static { padding: 16px; }
       .method-img { height: 160px; }
       .focus-box { padding: 22px 20px; }
       .hero { min-height: auto; }
       .hero-media img { object-position: 60% center; }
       .services-header { margin-bottom: 32px; }
-      .service-feature {
-        border-radius: 26px;
-        margin-bottom: 18px;
-      }
-      .service-feature-img { min-height: 220px; }
-      .service-feature-body { padding: 22px 20px; }
-      .service-feature-body h3 { margin-bottom: 12px; }
-      .service-feature-body p { font-size: 17px; line-height: 1.76; }
-      .service-feature-toggle {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        margin-top: 0;
-        padding: 14px 18px;
-        font-size: 14px;
-        letter-spacing: 0.02em;
-        text-transform: none;
-        border-radius: 18px;
-      }
-      .service-feature-toggle::after {
-        content: "+";
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 1;
-      }
-      .service-feature:not(.is-collapsed) .service-feature-toggle::after {
-        content: "−";
-      }
-      .service-feature-summary {
-        display: block;
-      }
-      .service-feature.is-collapsed .service-feature-body-copy,
-      .service-feature.is-collapsed .pse-links {
-        display: none;
-      }
-      .service-feature.is-collapsed .service-feature-summary {
-        display: block;
-      }
-      .service-feature:not(.is-collapsed) .service-feature-summary {
-        display: none;
-      }
       .footer-col li {
         padding-left: 14px;
       }
@@ -1039,7 +898,7 @@
 
 <header class="topbar">
   <div class="wrap topbar-inner">
-    <img class="brand-logo" src="./assets/new_branding/header_banderole_latest_optimized.png" alt="Heilpraxis Theresa Helfensteller" width="1140" height="570" fetchpriority="high" decoding="async">
+    <img class="brand-logo" src="./assets/new_branding/header_banderole_latest_optimized.png" alt="Heilpraxis Theresa Helfensteller" width="1140" height="570" decoding="async">
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menü</button>
     <nav id="site-nav">
       <a href="#start">Start</a>
@@ -1078,8 +937,8 @@
       <div class="news-banner">
         <div>
           <span class="eyebrow news-eyebrow">Aktuelles aus der Praxis</span>
-          <h3>Neue telefonische Erreichbarkeit</h3>
-          <p>Ab sofort erreichen Sie die Praxis zusätzlich telefonisch. Die neue Festnetznummer finden Sie im Kontaktbereich.</p>
+          <h2>Neue telefonische Erreichbarkeit</h2>
+          <p>Ab sofort erreichen Sie die Praxis zusätzlich telefonisch. Die aktuellen Telefonnummern finden Sie im Kontaktbereich.</p>
         </div>
         <div class="news-pill">
           <strong>Bestellpraxis</strong>
@@ -1101,7 +960,7 @@
             <span class="eyebrow">Über mich – Werdegang, Haltung und Arbeitsweise</span>
             <h2>Theresa Maria Helfensteller</h2>
             <span class="about-subtitle">Heilpraktikerin · Pharmatechnikerin · Fellbach</span>
-            <p class="about-quote">„Ich möchte Beschwerden ernst nehmen, individuelle Zusammenhänge betrachten und gemeinsam mit Ihnen nach ganzheitlichen Ansätzen suchen – ruhig, empathisch und ohne Druck."</p>
+            <p class="about-quote">„Ich möchte Beschwerden ernst nehmen, individuelle Zusammenhänge betrachten und gemeinsam mit Ihnen nach ganzheitlichen Ansätzen suchen – ruhig, empathisch und ohne Druck.“</p>
 
 
             <span class="eyebrow">Werdegang</span>
@@ -1138,44 +997,44 @@
   <section class="section" id="leistungen">
     <div class="wrap">
       <div class="services-header">
-        <span class="eyebrow">Leistungen</span>
+        <span class="eyebrow">Angebot</span>
         <h2>Leistungen</h2>
         <p>Im Rahmen meiner Tätigkeit biete ich folgende naturheilkundliche Leistungen an:</p>
       </div>
 
-      <div class="methods-grid services-equal">
+      <div class="methods-grid">
         <article class="method-item">
           <div class="method-card-static">
             <div class="method-img-wrap"><img class="method-img" src="./assets/embedded/inline-02.jpg" alt="Hände als Motiv für Begleitung und Psychosomatische Energetik"></div>
             <span class="service-tag" style="align-self:flex-start">Leistung</span>
-            <div class="method-title">Psychosomatische Energetik (PSE)</div>
+            <h3 class="method-title">Psychosomatische Energetik (PSE)</h3>
           </div>
         </article>
         <article class="method-item">
           <div class="method-card-static">
             <div class="method-img-wrap"><img class="method-img" src="./assets/embedded/inline-03.jpg" alt="Ernährungsbegleitung"></div>
             <span class="service-tag" style="align-self:flex-start">Leistung</span>
-            <div class="method-title">Ernährungsbegleitung und Beratung zu Nahrungsergänzungsmitteln</div>
+            <h3 class="method-title">Ernährungsbegleitung und Beratung zu Nahrungsergänzungsmitteln</h3>
           </div>
         </article>
         <article class="method-item">
           <div class="method-card-static">
             <div class="method-img-wrap"><img class="method-img" src="./assets/embedded/inline-04.jpg" alt="Phytotherapie, Ordnungstherapie, Bewegung und Hydrotherapie"></div>
             <span class="service-tag" style="align-self:flex-start">Leistung</span>
-            <div class="method-title">Phytotherapie, Ordnungstherapie sowie naturheilkundliche Empfehlungen zu Bewegungstherapie und Hydrotherapie nach den Grundsätzen von Sebastian Kneipp</div>
+            <h3 class="method-title">Phytotherapie, Ordnungstherapie sowie naturheilkundliche Empfehlungen zu Bewegungstherapie und Hydrotherapie nach den Grundsätzen von Sebastian Kneipp</h3>
           </div>
         </article>
         <article class="method-item">
           <div class="method-card-static">
             <div class="method-img-wrap"><img class="method-img" src="./assets/embedded/inline-06.jpg" alt="Naturkosmetik und Produktempfehlungen"></div>
             <span class="service-tag" style="align-self:flex-start">Leistung</span>
-            <div class="method-title">Beratung zu Naturkosmetik und Produktempfehlungen für die Anwendung zu Hause</div>
+            <h3 class="method-title">Beratung zu Naturkosmetik und Produktempfehlungen für die Anwendung zu Hause</h3>
           </div>
         </article>
       </div>
 
       <div class="focus-box">
-        <span class="eyebrow">Behandlungsschwerpunkte</span>
+        <h3>Behandlungsschwerpunkte</h3>
         <ul class="focus-list">
           <li>Erschöpfungszustände und reduzierte Belastbarkeit</li>
           <li>Innere Unruhe und emotionale Belastungen</li>
@@ -1297,15 +1156,6 @@
   }
   const form = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
-  const mobileFeature = document.querySelector('[data-mobile-collapsible]');
-  const mobileFeatureToggle = mobileFeature?.querySelector('.service-feature-toggle');
-  if (mobileFeature && mobileFeatureToggle) {
-    mobileFeatureToggle.addEventListener('click', event => {
-      event.preventDefault();
-      const collapsed = mobileFeature.classList.toggle('is-collapsed');
-      mobileFeatureToggle.setAttribute('aria-expanded', String(!collapsed));
-    });
-  }
   if (form) {
     form.addEventListener('submit', async e => {
       e.preventDefault();
@@ -1337,12 +1187,6 @@
       }
     });
   }
-  document.querySelectorAll('.method-item details').forEach(det => {
-    det.addEventListener('toggle', () => {
-      const btn = det.querySelector('.method-toggle');
-      if (btn) btn.textContent = det.open ? '−' : '+';
-    });
-  });
   const topbar = document.querySelector('.topbar');
   const getAnchorOffset = target => {
     const topbarHeight = topbar ? topbar.offsetHeight : 0;
