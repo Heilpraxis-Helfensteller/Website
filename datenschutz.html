@@ -154,7 +154,7 @@
     main { padding: 56px 0 88px; }
     .hero-legal {
       display: grid;
-      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
       gap: 26px;
       align-items: stretch;
       margin-bottom: 26px;
@@ -166,6 +166,10 @@
       border: 1px solid var(--blue-line);
       border-radius: var(--r-lg);
       box-shadow: var(--shadow);
+    }
+    .hero-card, .summary-card, .section-card { min-width: 0; }
+    .hero-card h1, .section-card h2, .summary-card h2 {
+      hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word;
     }
     .hero-card {
       padding: 42px;
@@ -257,7 +261,7 @@
     }
 
     @media (max-width: 900px) {
-      .hero-legal { grid-template-columns: 1fr; }
+      .hero-legal { grid-template-columns: minmax(0, 1fr); }
       .hero-card,
       .summary-card,
       .section-card {
@@ -364,13 +368,13 @@
         <article class="section-card">
           <span class="eyebrow">3</span>
           <h2>Kontaktformular</h2>
-          <p>Wenn Sie das Kontaktformular nutzen, werden Ihre eingegebenen Daten an den Dienst Formspree übermittelt und von dort an die Praxis weitergeleitet. Anbieter ist Formspree, Inc., USA. Verarbeitet werden insbesondere Name, E-Mail-Adresse, Erreichbarkeit, Betreff und Nachricht sowie technisch notwendige Metadaten.</p>
+          <p>Wenn Sie das Kontaktformular nutzen, werden Ihre eingegebenen Daten an den Dienst Formspree übermittelt und von dort an die Praxis weitergeleitet. Anbieter ist Formspree, Inc., USA. Verarbeitet werden insbesondere Name, E-Mail-Adresse, Telefonnummer, gewünschter Rückrufzeitraum, Betreff und Nachricht sowie technisch notwendige Metadaten.</p>
           <p>Die Verarbeitung erfolgt zur Bearbeitung Ihrer Anfrage und gegebenenfalls zur Vertragsanbahnung auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. Soweit dabei zusätzliche technische Schutz- und Missbrauchsprüfungen erfolgen, geschieht dies auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in einer sicheren und funktionsfähigen Bearbeitung von Website-Anfragen. Eine Übermittlung in die USA ist möglich. Formspree verweist auf geeignete Schutzmechanismen für internationale Datenübermittlungen. Weitere Informationen stellt Formspree unter <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">formspree.io/legal/privacy-policy</a> bereit.</p>
         </article>
 
         <article class="section-card">
           <span class="eyebrow">4</span>
-          <h2>Kontaktaufnahme per E-Mail oder Telefon</h2>
+          <h2>Kontaktaufnahme per <span style="white-space:nowrap">E-Mail</span> oder Telefon</h2>
           <p>Wenn Sie direkt per E-Mail oder telefonisch Kontakt aufnehmen, werden Ihre Angaben zur Bearbeitung Ihrer Anfrage verarbeitet. Dazu können insbesondere Name, Kontaktdaten, Zeitpunkt der Kontaktaufnahme und die von Ihnen mitgeteilten Inhalte gehören. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO beziehungsweise Art. 6 Abs. 1 lit. f DSGVO.</p>
         </article>
 

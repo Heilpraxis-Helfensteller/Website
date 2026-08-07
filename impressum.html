@@ -153,6 +153,10 @@
       border-radius: var(--r-lg);
       box-shadow: var(--shadow);
     }
+    .hero-card, .summary-card, .section-card { min-width: 0; }
+    .hero-card h1, .section-card h2, .summary-card h2 {
+      hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word;
+    }
     .hero-card {
       padding: 42px;
       background:

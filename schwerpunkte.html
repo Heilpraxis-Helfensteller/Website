@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heilpraxis Theresa Helfensteller · Heilpraktikerin in Fellbach</title>
-  <meta name="description" content="Heilpraxis Theresa Helfensteller in Fellbach am Kappelberg: ausführliche Anamnese, persönliche Begleitung und ein ganzheitlicher Blick auf anhaltende Beschwerden, Erschöpfung und Stressbelastungen.">
+  <title>Behandlungsschwerpunkte · Heilpraxis Theresa Helfensteller</title>
+  <meta name="description" content="Behandlungsschwerpunkte der Heilpraxis Theresa Helfensteller in Fellbach: Erschöpfung, innere Unruhe, Schlafprobleme, Schmerzen und weitere Anliegen.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://heilpraxis-theresa-helfensteller.de/">
+  <link rel="canonical" href="https://heilpraxis-theresa-helfensteller.de/schwerpunkte.html">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:site_name" content="Heilpraxis Theresa Helfensteller">
-  <meta property="og:title" content="Heilpraxis Theresa Helfensteller · Heilpraktikerin in Fellbach">
+  <meta property="og:title" content="Behandlungsschwerpunkte · Heilpraxis Theresa Helfensteller">
   <meta property="og:description" content="Heilpraxis Theresa Helfensteller in Fellbach am Kappelberg: ausführliche Anamnese, persönliche Begleitung und ein ganzheitlicher Blick auf anhaltende Beschwerden, Erschöpfung und Stressbelastungen.">
-  <meta property="og:url" content="https://heilpraxis-theresa-helfensteller.de/">
+  <meta property="og:url" content="https://heilpraxis-theresa-helfensteller.de/schwerpunkte.html">
   <meta property="og:image" content="https://heilpraxis-theresa-helfensteller.de/assets/new_branding/header_banderole_latest_optimized.png">
   <meta property="og:image:width" content="1140">
   <meta property="og:image:height" content="570">
@@ -454,7 +454,6 @@
     }
 
 
-    .method-title, .info-box h3, .focus-teaser h3 { overflow-wrap: break-word; }
     .method-title { font-size: 21px; font-family: "Crimson Pro",serif; font-weight: 400; color: var(--text); line-height: 1.15; }
     .method-sub { font-size: 15px; color: var(--text-soft); line-height: 1.55; margin-top: 2px; margin-bottom: 0; }
     .method-body {
@@ -494,25 +493,40 @@
     }
     .focus-teaser h3 { margin: 6px 0 6px; }
     .focus-teaser p { margin: 0; color: var(--text-soft); }
-    /* Kontaktkasten: darf schrumpfen, lange E-Mail bricht um */
-    .contact-layout { grid-template-columns: minmax(0, 1fr); }
-    .contact-card { min-width: 0; }
-    .contact-card h2, .contact-card p, .contact-items {
-      hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; min-width: 0;
+    #schwerpunkte { padding-top: 44px; }
+    .page-head { padding-top: 0; }
+    @media (max-width: 640px) { #schwerpunkte { padding-top: 28px; } }
+    .page-head .eyebrow { display: inline-block; margin-bottom: 12px; }
+    .page-head h1 {
+      font-size: clamp(28px, 7.2vw, 52px); line-height: 1.12; margin: 0 0 16px;
+      hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word;
     }
-    .contact-card a[href^="mailto:"], .contact-items a { overflow-wrap: anywhere; }
-    @media (max-width: 640px) {
-      .method-title, .info-box h3, .focus-teaser h3 {
-        hyphens: auto; -webkit-hyphens: auto;
-      }
+    .page-head p { max-width: 46rem; color: var(--text-soft); line-height: 1.75; margin: 0; }
+    .focus-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 12px 32px; margin: 0; padding: 0; list-style: none;
     }
-    @media (max-width: 420px) {
-      .focus-teaser > div { min-width: 0; width: 100%; }
+    .focus-grid li {
+      display: flex; gap: 12px; align-items: flex-start;
+      line-height: 1.6; font-size: 17px; color: var(--text-mid);
+      padding: 12px 0; border-bottom: 1px solid var(--blue-line);
+    }
+    .focus-grid li::before { content: "–"; color: var(--gold); flex-shrink: 0; }
+    .focus-box h3, .info-box h3, .focus-teaser h3, .focus-grid li {
+      hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word;
+    }
+    .focus-teaser > div { min-width: 0; width: 100%; }
     .focus-teaser h3 { overflow-wrap: anywhere; }
     .focus-teaser > div > * { min-width: 0; }
-    .cta-row { flex-direction: column; align-items: stretch; width: 100%; }
+    .cta-row { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 8px; }
+    @media (max-width: 420px) {
+      .cta-row { flex-direction: column; align-items: stretch; width: 100%; }
       .cta-row .btn { width: 100%; text-align: center; }
       .focus-teaser .btn { width: 100%; text-align: center; }
+    }
+    @media (max-width: 760px) {
+      .focus-grid { grid-template-columns: 1fr; gap: 0; }
+      .focus-grid li { font-size: 16px; }
     }
     @media (max-width: 640px) {
       .info-box, .focus-teaser { padding: 22px 20px; }
@@ -954,236 +968,61 @@
     <img class="brand-logo" src="./assets/new_branding/header_banderole_latest_optimized.png" alt="Heilpraxis Theresa Helfensteller" width="1140" height="570" decoding="async">
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menü</button>
     <nav id="site-nav">
-      <a href="#start">Start</a>
-      <a href="#aktuelles">Aktuelles</a>
-      <a href="#ueber">Über mich</a>
-      <a href="#leistungen">Leistungen</a>
-      <a href="./schwerpunkte.html">Schwerpunkte</a>
-      <a href="#kontakt">Kontakt</a>
-      <a class="btn btn-primary" href="#kontakt">Erstkontakt anfragen</a>
+      <a href="./index.html#start">Start</a>
+      <a href="./index.html#aktuelles">Aktuelles</a>
+      <a href="./index.html#ueber">Über mich</a>
+      <a href="./index.html#leistungen">Leistungen</a>
+      <a class="is-active" href="./schwerpunkte.html">Schwerpunkte</a>
+      <a href="./index.html#kontakt">Kontakt</a>
+      <a class="btn btn-primary" href="./index.html#kontakt">Erstkontakt anfragen</a>
     </nav>
   </div>
 </header>
 
 <main>
 
-  <!-- ① HERO: nur Text auf Sonnenblume -->
-  <section class="hero" id="start">
-    <div class="hero-media" aria-hidden="true">
-      <img src="./assets/hero/hero_sunflower.jpg" alt="" width="1600" height="800" sizes="100vw" fetchpriority="high" decoding="async">
-    </div>
-    <div class="hero-inner-single">
-      <div class="hero-text-single">
-        <div class="hero-location">Heilpraxis in Fellbach am Kappelberg</div>
-        <h1>Wenn Beschwerden bestehen bleiben</h1>
-        <p class="hero-sub">Im Mittelpunkt stehen Zeit für eine ausführliche Anamnese, persönliche Begleitung und ein ganzheitlicher Blick auf anhaltende Beschwerden, Erschöpfung sowie Belastungen im Zusammenhang mit Stress.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#kontakt">Erstkontakt anfragen</a>
-          <a class="btn btn-outline" href="#leistungen">Leistungen entdecken</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ② AKTUELLES -->
-  <section class="section" id="aktuelles">
+  <section class="section" id="schwerpunkte">
     <div class="wrap">
-      <div class="news-banner">
-        <div>
-          <span class="eyebrow news-eyebrow">Aktuelles aus der Praxis</span>
-          <h2>Neue telefonische Erreichbarkeit</h2>
-          <p>Ab sofort erreichen Sie die Praxis zusätzlich telefonisch. Die aktuellen Telefonnummern finden Sie im Kontaktbereich.</p>
-        </div>
-        <div class="news-pill">
-          <strong>Bestellpraxis</strong>
-          Termine nach Vereinbarung
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ③ ÜBER MICH -->
-  <section class="section" id="ueber">
-    <div class="wrap">
-      <div class="about-grid">
-        <div class="portrait-wrap">
-          <img src="./assets/embedded/inline-01.jpg" alt="Porträt von Theresa Helfensteller">
-          <img class="hecate-under-portrait" src="./assets/new_branding/hecate.png" alt="" aria-hidden="true">
-        </div>
-        <div class="about-content">
-            <span class="eyebrow">Über mich – Werdegang, Haltung und Arbeitsweise</span>
-            <h2>Theresa Maria Helfensteller</h2>
-            <span class="about-subtitle">Heilpraktikerin · Pharmatechnikerin · Fellbach</span>
-            <p class="about-quote">„Ich möchte Beschwerden ernst nehmen, individuelle Zusammenhänge betrachten und gemeinsam mit Ihnen nach ganzheitlichen Ansätzen suchen – ruhig, empathisch und ohne Druck.“</p>
-
-
-            <span class="eyebrow">Werdegang</span>
-            <ul class="timeline">
-              <li><span class="timeline-year">2013</span>Abitur am Gustav-Stresemann-Gymnasium in Fellbach-Schmiden</li>
-              <li><span class="timeline-year">2013 – 2018</span>Studium der Pharmatechnik mit Schwerpunkt Forschung und Entwicklung an der Hochschule Sigmaringen (Bachelor of Science)</li>
-              <li><span class="timeline-year">2018 – 2022</span>Qualitätsmanagerin für Arzneimittel bei der Weleda AG in Schwäbisch Gmünd</li>
-              <li><span class="timeline-year">2022 – 2025</span>Heilpraktikerausbildung an der ILS Hamburg, Abschlussprüfungen am Gesundheitsamt Heilbronn mit Erteilung der Erlaubnis zur Ausübung der Heilkunde (Heilpraktikererlaubnis)</li>
-              <li><span class="timeline-year">Im Anschluss</span>Hospitationen in diversen Naturheilpraxen</li>
-              <li><span class="timeline-year">Ab 01.06.2026</span>Eigene Heilpraxis in Fellbach (Schwerpunkt Psychosomatik)</li>
-            </ul>
-
-            <div class="about-flowtext-wrap">
-              <div class="about-longtext">
-                <p>Mein Name ist Theresa Maria Helfensteller. Ich bin in Stuttgart Bad Cannstatt geboren und in Fellbach aufgewachsen.</p>
-                <p>Nach meinem Abitur studierte ich Pharmatechnik an der Hochschule in Sigmaringen mit den Schwerpunkten Forschung und Entwicklung von Arzneimitteln, der Herstellung von Kosmetika sowie Qualitätsmanagement. Dabei galt mein besonderes Interesse der Verbindung von moderner Arzneimittelentwicklung und naturbezogenen sowie ergänzenden Ansätzen.</p>
-                <p>Im Rahmen meiner Bachelor-Arbeit im Bereich der Krebs- und Alterungsforschung vertiefte ich mein Interesse an ganzheitlichen Fragestellungen im Gesundheitskontext. Anschließend arbeitete ich mehrere Jahre bei der Weleda AG als internationale Qualitätsmanagerin im Bereich anthroposophischer Arzneimittel und Naturkosmetik.</p>
-                <p>Parallel dazu beschäftige ich mich seit vielen Jahren intensiv mit Phytotherapie, homöopathischen Arzneimitteln und naturbezogener Kosmetik.</p>
-                <p>Der Wunsch, Menschen direkter zu begleiten, führte mich in die Ausbildung zur Heilpraktikerin. Ergänzend absolvierte ich Hospitationen in verschiedenen Naturheilpraxen, um Einblicke in unterschiedliche Arbeitsweisen zu gewinnen und meine eigene Haltung weiterzuentwickeln.</p>
-                <span class="eyebrow about-section-label">Meine Haltung und Arbeitsweise</span>
-                <p>Im Mittelpunkt meiner Tätigkeit stehen eine sorgfältige Anamnese, ausreichend Zeit für persönliche Gespräche sowie ein ganzheitlicher Blick auf körperliche, seelische und biografische Zusammenhänge.</p>
-                <p>Ich begleite Menschen in belastenden Lebensphasen individuell, aufmerksam und respektvoll.</p>
-                <p>Im Fokus steht eine ruhige, zugewandte und wertschätzende Arbeitsweise ohne Zeit- oder Leistungsdruck.</p>
-                <span class="eyebrow about-section-label">Hinweis</span>
-                <p>Bitte beachten Sie: Naturheilkundliche und alternative Verfahren gehören überwiegend zur Erfahrungsheilkunde und sind wissenschaftlich nicht in allen Bereichen anerkannt. Sie ersetzen keine ärztliche Diagnose oder Behandlung und verstehen sich als begleitende Maßnahmen.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ④ LEISTUNGEN -->
-  <section class="section" id="leistungen">
-    <div class="wrap">
-      <div class="services-header">
-        <span class="eyebrow">Angebot</span>
-        <h2>Leistungen</h2>
-        <p>Im Rahmen meiner Tätigkeit biete ich folgende naturheilkundliche Methoden an:</p>
+      <div class="page-head">
+        <span class="eyebrow">Überblick</span>
+        <h1>Behandlungsschwerpunkte</h1>
+        <p>Die folgenden Anliegen begegnen mir in meiner Praxis besonders häufig. Auch wenn Ihr Anliegen hier nicht aufgeführt ist, dürfen Sie sich gerne bei mir melden – wir schauen dann gemeinsam, ob ich Sie begleiten kann.</p>
       </div>
 
-      <div class="methods-grid">
-        <details class="method-item">
-          <summary>
-            <div class="method-img-wrap"><img class="method-img" src="./assets/embedded/inline-02.jpg" alt="Hände als Motiv für Begleitung und Psychosomatische Energetik"></div>
-            <span class="service-tag" style="align-self:flex-start">Leistung</span>
-            <h3 class="method-title">Psychosomatische Energetik (PSE)</h3>
-            <span class="method-more">Mehr erfahren</span>
-          </summary>
-          <div class="method-body">
-            <p>Die Psychosomatische Energetik (PSE) wurde von Dr. med. Reimar Banis entwickelt. Das Konzept verbindet verschiedene naturheilkundliche und komplementäre Ansätze, unter anderem Elemente aus der Chakrenlehre, Kinesiologie und Komplexhomöopathie.</p>
-            <p>In meiner Praxis biete ich die PSE im Rahmen meiner naturheilkundlichen Tätigkeit an. Die Vorgehensweise wird im persönlichen Gespräch erläutert und auf die jeweilige Situation abgestimmt.</p>
-          </div>
-        </details>
-        <details class="method-item">
-          <summary>
-            <div class="method-img-wrap"><img class="method-img" src="./assets/embedded/inline-03.jpg" alt="Kräuter, Samen und natürliche Zutaten für die Ernährungsbegleitung"></div>
-            <span class="service-tag" style="align-self:flex-start">Leistung</span>
-            <h3 class="method-title">Ernährungsbegleitung, Beratung zu Nahrungsergänzungsmitteln und Naturkosmetik</h3>
-            <span class="method-more">Mehr erfahren</span>
-          </summary>
-          <div class="method-body">
-            <p>Ich berate und begleite Sie bei Fragen rund um Ernährung, Nahrungsergänzungsmittel und Naturkosmetik. Im Mittelpunkt stehen Ihre persönlichen Ernährungsgewohnheiten und Ihre individuelle Lebenssituation.</p>
-            <p>Gemeinsam besprechen wir Möglichkeiten, die sich unkompliziert in Ihren Alltag integrieren lassen.</p>
-          </div>
-        </details>
-        <details class="method-item">
-          <summary>
-            <div class="method-img-wrap"><img class="method-img" src="./assets/embedded/inline-04.jpg" alt="Bach mit klarem Wasser als Motiv für Kneipp-Anwendungen"></div>
-            <span class="service-tag" style="align-self:flex-start">Leistung</span>
-            <h3 class="method-title">Phytotherapie, Ordnungstherapie sowie naturheilkundliche Empfehlungen zu Bewegung und Wasseranwendungen nach den Grundsätzen von Sebastian Kneipp</h3>
-            <span class="method-more">Mehr erfahren</span>
-          </summary>
-          <div class="method-body">
-            <p>Im Rahmen meiner naturheilkundlichen Tätigkeit berate ich Sie zu pflanzlichen Anwendungen, Anregungen zur Alltagsgestaltung, Bewegung sowie Wasseranwendungen nach den Grundsätzen von Sebastian Kneipp.</p>
-          </div>
-        </details>
-        <details class="method-item">
-          <summary>
-            <div class="method-img-wrap"><img class="method-img" src="./assets/embedded/inline-06.jpg" alt="Homöopathische Tinkturen und Globuli auf einem Holztisch"></div>
-            <span class="service-tag" style="align-self:flex-start">Leistung</span>
-            <h3 class="method-title">Homöopathie</h3>
-            <span class="method-more">Mehr erfahren</span>
-          </summary>
-          <div class="method-body">
-            <p>Die Homöopathie biete ich als einen Bestandteil meiner naturheilkundlichen Tätigkeit an.</p>
-          </div>
-        </details>
+      <div class="focus-box" style="margin-top:32px">
+        <h3>Womit Patientinnen und Patienten zu mir kommen</h3>
+        <ul class="focus-grid">
+            <li>Erschöpfungszustände und reduzierte Belastbarkeit</li>
+            <li>Innere Unruhe und emotionale Belastungen</li>
+            <li>Grübelneigung und psychische Anspannung</li>
+            <li>Schlaf- und Konzentrationsprobleme</li>
+            <li>Länger bestehende Beschwerden</li>
+            <li>Wiederkehrende Infekte</li>
+            <li>Verdauungsprobleme und subjektive Unverträglichkeiten bestimmter Nahrungsmittel</li>
+            <li>Schmerzen</li>
+        </ul>
       </div>
 
-      <div class="info-box">
-        <h3>Hinweis</h3>
-        <p>Die auf dieser Seite genannten Verfahren und Beratungsangebote sind naturheilkundliche bzw. komplementäre Angebote. Sie ersetzen keine ärztliche Untersuchung, medizinische Diagnostik oder notwendige medizinische Behandlung.</p>
-        <p>Bei gesundheitlichen Beschwerden oder Veränderungen sollte zunächst ärztlicher Rat eingeholt werden.</p>
+      <div class="info-box" style="margin-top:16px">
+        <h3>Gut zu wissen</h3>
+        <p>Die genannten Anliegen begleite ich im Rahmen meiner naturheilkundlichen Tätigkeit. Naturheilkundliche Angebote ersetzen keine ärztliche Untersuchung, medizinische Diagnostik oder notwendige medizinische Behandlung.</p>
         <p>Bei akuten, starken oder neu auftretenden Beschwerden sowie bei ungeklärten Schmerzen ist eine ärztliche Abklärung empfehlenswert.</p>
       </div>
 
-      <div class="info-box">
-        <h3>Allgemeine Informationen</h3>
-        <p>Es handelt sich um private Leistungen. Eine Abrechnung mit gesetzlichen Krankenkassen ist leider nicht möglich. Auf Wunsch kann die Rechnungsstellung nach dem Gebührenverzeichnis für Heilpraktiker (GebüH) erfolgen. Die Rechnung können Sie gegebenenfalls bei Ihrer privaten Krankenversicherung oder Zusatzversicherung zur Erstattung einreichen. Ob und in welchem Umfang eine Erstattung erfolgt, richtet sich nach Ihrem individuellen Versicherungsvertrag.</p>
-        <p>Zu Beginn findet ein ausführliches Erstgespräch statt, in dem wir Ihre aktuelle Situation und Ihre persönlichen Anliegen besprechen. Anschließend erläutere ich Ihnen die möglichen naturheilkundlichen Vorgehensweisen und wir besprechen gemeinsam, welche davon für Sie in Betracht kommen.</p>
-        <p>Die Kosten betragen je nach Dauer und Umfang der Behandlung sowie nach eingesetzten Mitteln und Materialien etwa 110 € pro Einheit.</p>
-      </div>
-
-      <div class="focus-teaser">
+      <div class="focus-teaser" style="margin-top:16px">
         <div>
-          <span class="eyebrow">Überblick</span>
-          <h3>Behandlungsschwerpunkte</h3>
-          <p>Womit Patientinnen und Patienten am häufigsten zu mir kommen.</p>
+          <span class="eyebrow">Nächster Schritt</span>
+          <h3>Sie möchten Ihr Anliegen besprechen?</h3>
+          <p>Im Erstgespräch nehmen wir uns Zeit für Ihre Situation.</p>
         </div>
-        <a class="btn btn-outline" href="./schwerpunkte.html">Schwerpunkte ansehen</a>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="./index.html#kontakt">Erstkontakt anfragen</a>
+          <a class="btn btn-outline" href="./index.html#leistungen">Zu den Leistungen</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ⑤ KONTAKT -->
-  <section class="section" id="kontakt">
-    <div class="wrap">
-      <div class="contact-layout">
-        <div class="contact-card">
-          <span class="eyebrow">Kontakt</span>
-          <h2>Erstkontakt und Terminvereinbarung</h2>
-          <p>Ich führe meine Praxis als Bestellpraxis, das heißt ausschließlich nach vorheriger Terminvereinbarung.</p>
-          <p>Sie können mir eine Anfrage über das Kontaktformular, per E-Mail oder telefonisch über den Anrufbeantworter zukommen lassen. Ich melde mich zeitnah persönlich zurück, um das weitere Vorgehen mit Ihnen zu besprechen.</p>
-          <p><strong>Hinweis zum Datenschutz</strong><br>Aus Datenschutzgründen empfehle ich, medizinische Unterlagen, Befunde oder andere sensible Informationen nicht per E-Mail zu übermitteln, sondern zum ersten Termin in die Praxis mitzubringen.</p>
-          <p class="contact-freude">Ich freue mich auf Ihre Kontaktaufnahme.</p>
-          <div class="contact-items">
-            <div class="contact-item"><span class="contact-item-label">E-Mail</span><span class="contact-item-value">kontakt@heilpraxis-theresa-helfensteller.de</span></div>
-            <div class="contact-item"><span class="contact-item-label">Festnetz</span><span class="contact-item-value"><a href="tel:+4971128041378">0711/28041378</a></span></div>
-            <div class="contact-item"><span class="contact-item-label">Mobil</span><span class="contact-item-value"><a href="tel:+4915739355347">0157 39355347</a></span></div>
-            <div class="contact-item"><span class="contact-item-label">Praxisadresse</span><span class="contact-item-value">Vordere Straße 37 · 70734 Fellbach</span></div>
-            <div class="contact-item">
-              <span class="contact-item-label">Wegbeschreibung</span>
-              <span class="contact-item-value">Meine Praxis befindet sich am Kappelberg, fußläufig zur neuen Kelter. Das Haus liegt direkt an der Bushaltestelle „Kappelbergstraße“ der Linie 60. Der Eingang befindet sich auf der rechten Seite. Wenn Sie mit dem Auto anreisen, stehen im Wohngebiet ausreichend kostenfreie Parkplätze zur Verfügung.</span>
-            </div>
-          </div>
-        </div>
-        <div class="contact-right">
-          <div class="contact-form-card">
-            <span class="eyebrow">Kontaktformular</span>
-            <h3>Schreiben Sie mir</h3>
-            <form class="form" id="contactForm" action="https://formspree.io/f/mbdbrbkr" method="POST" accept-charset="UTF-8">
-              <div class="form-row">
-                <label>Name<input type="text" name="name" placeholder="Vor- und Nachname" required></label>
-                <label>E-Mail<input type="email" name="email" placeholder="name@example.de" autocomplete="email" required></label>
-              </div>
-              <div class="form-row">
-                <label>Telefon für Rückruf<input type="tel" name="phone" placeholder="z. B. 0171 1234567" autocomplete="tel" required></label>
-                <label>Wunschzeitraum für Rückruf<input type="text" name="reachability" placeholder="z. B. vormittags oder Di und Do ab 15 Uhr" autocomplete="off" required></label>
-              </div>
-              <label>Anliegen<input type="text" name="subject" placeholder="Grund der Anfrage" autocomplete="off" required></label>
-              <label>Nachricht<textarea name="message" placeholder="Ihre Nachricht" required></textarea></label>
-              <label class="hp-field" aria-hidden="true">Bitte dieses Feld leer lassen<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
-              <input type="hidden" name="_subject" value="Neue Anfrage über die Website von Theresa Helfensteller">
-              <input type="hidden" name="_language" value="de">
-              <p class="form-note">Telefonnummer und Wunschzeitraum sind Pflichtfelder – so kann ich Sie gezielt zurückrufen, ohne dass wir lange hin und her schreiben.</p>
-              <p class="form-note">Bitte keine medizinischen Berichte, Bilder oder Diagnosen über das Formular senden.</p>
-              <p class="form-note">Die Verarbeitung Ihrer Daten erfolgt zur Bearbeitung Ihrer Anfrage gemäß unserer <a href="./datenschutz.html">Datenschutzerklärung</a>.</p>
-              <div class="form-status" id="formStatus" aria-live="polite"></div>
-              <button class="btn btn-primary" type="submit" style="align-self:flex-start">Anfrage senden</button>
-            </form>
-          </div>
-          <div class="contact-logo-backdrop" aria-hidden="true">
-            <img src="./assets/new_branding/Webseite_3.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer>
